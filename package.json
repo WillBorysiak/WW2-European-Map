@@ -1,0 +1,30 @@
+{
+	"name": "template",
+	"version": "1.0.0",
+	"description": "Template Site",
+	"main": "app.js",
+	"scripts": {
+		"start": "webpack serve --open --config webpack.dev.js",
+		"build": "webpack --config webpack.prod.js",
+		"json-server": "json-server --watch ./api/db.json"
+	},
+	"author": "Will Borysiak",
+	"license": "ISC",
+	"dependencies": {
+		"@babel/core": "^7.16.7",
+		"@babel/plugin-transform-runtime": "^7.16.8",
+		"@babel/preset-env": "^7.16.8",
+		"@babel/runtime": "^7.16.7",
+		"babel-loader": "^8.2.3",
+		"css-loader": "^6.5.1",
+		"json-server": "^0.17.0",
+		"mini-css-extract-plugin": "^2.5.1",
+		"sass": "^1.48.0",
+		"sass-loader": "^12.4.0",
+		"style-loader": "^3.3.1",
+		"webpack": "^5.66.0",
+		"webpack-cli": "^4.9.1",
+		"webpack-dev-server": "^4.7.3",
+		"webpack-merge": "^5.8.0"
+	}
+}
