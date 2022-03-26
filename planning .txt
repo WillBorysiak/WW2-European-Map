@@ -1,0 +1,16 @@
+WW2 Map Planning
+
+1. Create basic layout for the page.
+
+2. Add google maps interface into the UI.
+
+3. Create the data in JSON file.
+
+4. Create map markers for locations.
+
+5. Create objects for each location.
+
+6. Link map markers and objects together.
+
+
+

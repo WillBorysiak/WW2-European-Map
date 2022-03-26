@@ -8,25 +8,25 @@
 @use '3-layout/general-layout';
 
 // Components
-@use '4-components/buttons.scss';
+@use '4-components/sidebar';
 
 // Components
-@use '4-components/nav-bar.scss';
+@use '4-components/map';
 
-// Page One Styles
+// Components
+@use '4-components/buttons';
+
+// Pages
 @use '5-pages/page-one';
 
-// Page Two Styles
-@use '5-pages/page-two';
-
-// Page Three Styles
-@use '5-pages/page-three';
-
 // Animations
-@use '6-utility/animations';
+@use '6-Animations/animations';
 
 // Text Animations
-@use '6-utility/text-animations';
+@use '6-Animations/text-animations';
 
-// Page One Media Queries
-@use '7-responsive/page-one-MQ';
+// Media Queries
+@use '7-responsive/_media-queries';
+
+// Utility
+@use '8-Utility/utility';

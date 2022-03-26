@@ -1,7 +1,7 @@
 {
-	"name": "template",
+	"name": "ww2-european-map",
 	"version": "1.0.0",
-	"description": "Template Site",
+	"description": "WW2 European Map",
 	"main": "app.js",
 	"scripts": {
 		"start": "webpack serve --open --config webpack.dev.js",
@@ -17,7 +17,6 @@
 		"@babel/runtime": "^7.16.7",
 		"babel-loader": "^8.2.3",
 		"css-loader": "^6.5.1",
-		"json-server": "^0.17.0",
 		"mini-css-extract-plugin": "^2.5.1",
 		"sass": "^1.48.0",
 		"sass-loader": "^12.4.0",
