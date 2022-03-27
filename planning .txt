@@ -1,16 +1,20 @@
 WW2 Map Planning
 
-1. Create basic layout for the page.
+ Create basic layout for the page - DONE
 
-2. Add google maps interface into the UI.
+ Add google maps interface into the UI - DONE
 
-3. Create the data in JSON file.
+Make responsive for mobile
 
-4. Create map markers for locations.
+ Make sidebar expand once battle is selected
 
-5. Create objects for each location.
-
-6. Link map markers and objects together.
+ Create small text cards in sidebar UI for small state
 
 
+ Create map markers for locations
 
+ Create the data in JSON file
+
+ Create objects for each location
+
+ Link map markers and objects together

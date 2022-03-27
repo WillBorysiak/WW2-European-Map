@@ -2,10 +2,18 @@
 
 .sidebar {
 	height: 100%;
-	width: 40vw;
+	width: 25vw;
 
 	display: flex;
 	flex-direction: column;
 
-	border: 1px solid black;
+	text-align: center;
+}
+
+.sidebar-battle {
+	height: 100%;
+	width: 35vw;
+
+	display: flex;
+	flex-direction: column;
 }

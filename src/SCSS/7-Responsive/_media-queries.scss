@@ -1,0 +1,17 @@
+// Media Queries
+
+// Imports
+@use '../1-Abstracts/index' as mQ;
+
+@media (min-width: mQ.$mobileMin) and (max-width: mQ.$mobileMax) {
+	body {
+		flex-direction: column-reverse;
+	}
+	.sidebar {
+		height: 30vh;
+		width: 100%;
+	}
+	#map {
+		height: 70vh;
+	}
+}

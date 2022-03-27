@@ -1,9 +1,15 @@
 // Map Styles
 
-#map {
+.euroMap {
 	height: 100%;
+	width: 75vw;
 
-	flex: 1;
+	background-color: white;
+}
+
+.euroMap-battle {
+	height: 100%;
+	width: 65vw;
 
 	background-color: white;
 }
