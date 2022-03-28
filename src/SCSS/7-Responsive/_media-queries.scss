@@ -3,15 +3,128 @@
 // Imports
 @use '../1-Abstracts/index' as mQ;
 
-@media (min-width: mQ.$mobileMin) and (max-width: mQ.$mobileMax) {
+// Small Mobile
+
+@media screen and (max-width: mQ.$smallMobile) {
 	body {
 		flex-direction: column-reverse;
 	}
 	.sidebar {
 		height: 30vh;
 		width: 100%;
+		background-color: red;
+	}
+	.sidebar-battle {
+		height: 40vh;
+		width: 100%;
 	}
 	#map {
 		height: 70vh;
+		width: 100vw;
+	}
+}
+
+// Mobile
+
+@media screen and (min-width: mQ.$mobileMin) and (max-width: mQ.$mobileMax) {
+	body {
+		flex-direction: column-reverse;
+	}
+	.sidebar {
+		height: 30vh;
+		width: 100%;
+		background-color: orange;
+	}
+	.sidebar-battle {
+		height: 40vh;
+		width: 100%;
+	}
+	#map {
+		height: 70vh;
+		width: 100vw;
+	}
+}
+
+// Tablet
+
+@media screen and (min-width: mQ.$tabletMin) and (max-width: mQ.$tabletMax) {
+	body {
+		flex-direction: column-reverse;
+	}
+	.sidebar {
+		height: 30vh;
+		width: 100%;
+		background-color: yellow;
+	}
+	.sidebar-battle {
+		height: 40vh;
+		width: 100%;
+	}
+	#map {
+		height: 70vh;
+		width: 100vw;
+	}
+}
+
+// Laptop
+
+@media screen and (min-width: mQ.$laptopMin) and (max-width: mQ.$laptopMax) {
+	body {
+		flex-direction: row;
+	}
+	.sidebar {
+		height: 100%;
+		width: 40vw;
+		background-color: green;
+	}
+	.sidebar-battle {
+		height: 100%;
+		width: 50vw;
+	}
+	#map {
+		height: 100%;
+		width: 60vw;
+	}
+}
+
+// Desktop
+
+@media screen and (min-width: mQ.$desktopMin) and (max-width: mQ.$desktopMax) {
+	body {
+		flex-direction: row;
+	}
+	.sidebar {
+		height: 100%;
+		width: 40vw;
+		background-color: blue;
+	}
+	.sidebar-battle {
+		height: 100%;
+		width: 50vw;
+	}
+	#map {
+		height: 100%;
+		width: 60vw;
+	}
+}
+
+// Wide Desktop
+
+@media screen and (min-width: mQ.$wideDesktop) {
+	body {
+		flex-direction: row;
+	}
+	.sidebar {
+		height: 100%;
+		width: 40vw;
+		background-color: purple;
+	}
+	.sidebar-battle {
+		height: 100%;
+		width: 50vw;
+	}
+	#map {
+		height: 100%;
+		width: 60vw;
 	}
 }

@@ -1,5 +1,23 @@
 // Media Query Breakpoints
 
+// Small Mobile Breakpoints
+$smallMobile: 319px;
+
 // Mobile Breakpoints
 $mobileMin: 320px;
 $mobileMax: 480px;
+
+// Tablet Breakpoints
+$tabletMin: 481px;
+$tabletMax: 768px;
+
+// Laptop Breakpoints
+$laptopMin: 769px;
+$laptopMax: 1024px;
+
+// Desktop Breakpoints
+$desktopMin: 1025px;
+$desktopMax: 1200px;
+
+// Wide Desktop Breakpoints
+$wideDesktop: 1201px;

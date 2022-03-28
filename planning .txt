@@ -4,12 +4,11 @@ WW2 Map Planning
 
  Add google maps interface into the UI - DONE
 
-Make responsive for mobile
+Make responsive for mobile - DONE
 
- Make sidebar expand once battle is selected
+ Make sidebar expand once battle is selected - DONE
 
- Create small text cards in sidebar UI for small state
-
+ Create battle cards in sidebar
 
  Create map markers for locations
 

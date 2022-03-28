@@ -1,0 +1,33 @@
+// Battle Styles
+
+.battle-container {
+	margin-top: 2rem;
+}
+
+.battle {
+	width: 100%;
+	height: 10vh;
+
+	display: flex;
+	flex-direction: row;
+
+	margin-bottom: 1.75rem;
+	cursor: pointer;
+
+	background-color: #42484d;
+	border-radius: 5px;
+}
+
+.battle-title {
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+.battle-image {
+	height: 100%;
+	width: 20%;
+
+	background-color: brown;
+	background-size: cover;
+	background-position: center;
+}
