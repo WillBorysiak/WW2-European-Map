@@ -1,6 +1,7 @@
 'use strict';
 
 // Imports
+
 import '../SCSS/main.scss';
 import * as qS from './querySelectors.js';
 import { battleToggle } from './appFunctions.js';
@@ -13,7 +14,7 @@ class App {
 
 	loadMap() {
 		const latitude = 55;
-		const longitude = 20;
+		const longitude = 17;
 		const coords = [latitude, longitude];
 		const map = L.map('map').setView(coords, 5);
 

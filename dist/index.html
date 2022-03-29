@@ -6,10 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Roman&family=Montserrat&family=Oswald&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Luxurious+Roman&family=Montserrat&family=Oswald&display=swap"
 			rel="stylesheet"
 		/>
 		<link
@@ -27,37 +25,41 @@
 		<title>WW2 European Map</title>
 	</head>
 	<body>
-		<div class="sidebar">
+		<section class="sidebar">
 			<button id="test-btn">Test</button>
 
 			<ul class="battle-container">
 				<li class="battle">
 					<div class="battle-image"></div>
-					<h2 class="battle-title">Running on April 14</h2>
-					<div class="battle-details">
-						<span class="battle-icon">🏃‍♂️</span>
-						<span class="battle-value">5.2</span>
-						<span class="workout__unit">km</span>
-					</div>
-					<div class="workout__details">
-						<span class="workout__icon">⏱</span>
-						<span class="workout__value">24</span>
-						<span class="workout__unit">min</span>
-					</div>
-					<div class="workout__details">
-						<span class="workout__icon">⚡️</span>
-						<span class="workout__value">4.6</span>
-						<span class="workout__unit">min/km</span>
-					</div>
-					<div class="workout__details">
-						<span class="workout__icon">🦶🏼</span>
-						<span class="workout__value">178</span>
-						<span class="workout__unit">spm</span>
+					<div class="info-container">
+						<div class="text-container">
+							<h2 class="battle-title">Title of the Battle</h2>
+							<div class="data-container">
+								<div class="battle-details">
+									<span class="battle-info">Location:</span>
+									<span class="battle-value">*Exact Location - Country*</span>
+								</div>
+								<div class="battle-details">
+									<span class="battle-info">Factions</span>
+									<div class="faction-container">
+										<span class="faction-flag">🏳️‍🌈</span>
+										<span class="faction-flag">km</span>
+									</div>
+								</div>
+								<div class="battle-details">
+									<span class="battle-icon">Manpower</span>
+									<div class="faction-container">
+										<span class="faction-manpower">Manpower</span>
+										<span class="faction-manpower">Manpower</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</li>
 			</ul>
-		</div>
-		<div class="euroMap" id="map"></div>
+		</section>
+		<section class="warMap" id="map"></section>
 		<!-- Template Set Up -->
 		<!-- Scripts -->
 		<script src="./main.js"></script>

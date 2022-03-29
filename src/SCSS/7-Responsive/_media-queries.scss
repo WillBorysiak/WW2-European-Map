@@ -18,9 +18,13 @@
 		height: 40vh;
 		width: 100%;
 	}
-	#map {
+	.warMap {
 		height: 70vh;
-		width: 100vw;
+		width: 100%;
+	}
+	.warMap-battle {
+		height: 60vh;
+		width: 100%;
 	}
 }
 
@@ -39,9 +43,13 @@
 		height: 40vh;
 		width: 100%;
 	}
-	#map {
+	.warMap {
 		height: 70vh;
-		width: 100vw;
+		width: 100%;
+	}
+	.warMap-battle {
+		height: 60vh;
+		width: 100%;
 	}
 }
 
@@ -60,9 +68,13 @@
 		height: 40vh;
 		width: 100%;
 	}
-	#map {
+	.warMap {
 		height: 70vh;
-		width: 100vw;
+		width: 100%;
+	}
+	.warMap-battle {
+		height: 60vh;
+		width: 100%;
 	}
 }
 
@@ -81,9 +93,13 @@
 		height: 100%;
 		width: 50vw;
 	}
-	#map {
+	.warMap {
 		height: 100%;
 		width: 60vw;
+	}
+	.warMap-battle {
+		height: 100%;
+		width: 50vw;
 	}
 }
 
@@ -102,9 +118,13 @@
 		height: 100%;
 		width: 50vw;
 	}
-	#map {
+	.warMap {
 		height: 100%;
 		width: 60vw;
+	}
+	.warMap-battle {
+		height: 100%;
+		width: 50vw;
 	}
 }
 
@@ -116,15 +136,19 @@
 	}
 	.sidebar {
 		height: 100%;
-		width: 40vw;
+		width: 35vw;
 		background-color: purple;
 	}
 	.sidebar-battle {
 		height: 100%;
-		width: 50vw;
+		width: 45vw;
 	}
-	#map {
+	.warMap {
 		height: 100%;
-		width: 60vw;
+		width: 65vw;
+	}
+	.warMap-battle {
+		height: 100%;
+		width: 55vw;
 	}
 }

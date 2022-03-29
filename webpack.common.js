@@ -9,15 +9,6 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.(jpg)$/i,
-				use: [
-					{
-						loader: 'url-loader',
-					},
-				],
-				type: 'asset/resource',
-			},
-			{
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: {
@@ -27,12 +18,27 @@ module.exports = {
 			{
 				test: /\.css|scss$/,
 				use: [
+					MiniCssExtractPlugin.loader,
 					{
-						loader: MiniCssExtractPlugin.loader,
-						options: { publicPath: '.' },
+						loader: 'css-loader',
 					},
-					'css-loader',
-					'sass-loader',
+					{
+						loader: 'resolve-url-loader',
+					},
+					{
+						loader: 'sass-loader',
+						options: {
+							sourceMap: true,
+						},
+					},
+				],
+			},
+			{
+				test: /\.(jpg)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+					},
 				],
 			},
 		],
