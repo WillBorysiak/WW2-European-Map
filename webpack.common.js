@@ -34,12 +34,12 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(jpg)$/i,
-				use: [
-					{
-						loader: 'file-loader',
-					},
-				],
+				test: /\.(png|jpg|gif|svg)$/i,
+				loader: 'file-loader',
+				options: {
+					outputPath: 'images',
+					name: '[name].[ext]',
+				},
 			},
 		],
 	},

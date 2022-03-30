@@ -10,10 +10,8 @@ Make responsive for mobile - DONE
 
  Create battle cards in sidebar
 
+ Make battle cards responsive
+
  Create map markers for locations
 
  Create the data in JSON file
-
- Create objects for each location
-
- Link map markers and objects together
