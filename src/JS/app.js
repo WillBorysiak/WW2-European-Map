@@ -5,12 +5,14 @@
 import '../SCSS/main.scss';
 import * as qS from './querySelectors.js';
 import { battleToggle } from './appFunctions.js';
-import jpg from '../SCSS/images/ww2.jpg';
+import jpg from '../images/ww2.jpg';
 
 class App {
 	constructor() {
 		this.loadMap();
-		this.battleView();
+		// this.battleView();
+		this.showInfoView();
+		this.hideInfoView();
 	}
 
 	loadMap() {
@@ -24,8 +26,21 @@ class App {
 		}).addTo(map);
 	}
 
-	battleView() {
-		qS.testBtn.addEventListener('click', battleToggle);
+	// battleView() {
+	// 	qS.testBtn.addEventListener('click', battleToggle);
+	// }
+
+	showInfoView() {
+		qS.battleItem.addEventListener('mouseover', function () {
+			qS.detailsContainer.classList.remove('details-container-hide');
+			qS.detailsContainer.classList.add('details-container-show');
+		});
+	}
+	hideInfoView() {
+		qS.battleItem.addEventListener('mouseleave', function () {
+			qS.detailsContainer.classList.remove('details-container-show');
+			qS.detailsContainer.classList.add('details-container-hide');
+		});
 	}
 }
 console.log(jpg);

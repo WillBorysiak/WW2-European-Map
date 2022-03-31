@@ -23,9 +23,6 @@ module.exports = {
 						loader: 'css-loader',
 					},
 					{
-						loader: 'resolve-url-loader',
-					},
-					{
 						loader: 'sass-loader',
 						options: {
 							sourceMap: true,
@@ -34,12 +31,8 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(png|jpg|gif|svg)$/i,
-				loader: 'file-loader',
-				options: {
-					outputPath: 'images',
-					name: '[name].[ext]',
-				},
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				type: 'asset/resource',
 			},
 		],
 	},

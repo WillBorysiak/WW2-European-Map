@@ -14,4 +14,6 @@ Make responsive for mobile - DONE
 
  Create map markers for locations
 
+ **EXTRA FUNCTIONALITY**
+
  Create the data in JSON file

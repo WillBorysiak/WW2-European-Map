@@ -1,6 +1,6 @@
 // Battle Styles
 
-.battles-container {
+.battle-container {
 	margin-top: 2rem;
 
 	color: ghostwhite;
@@ -8,7 +8,7 @@
 
 .battle {
 	width: 100%;
-	height: 25vh;
+	height: 20vh;
 
 	display: flex;
 	flex-direction: column;
@@ -17,35 +17,39 @@
 
 	background-color: #42484d;
 	border-radius: 5px;
+	border: 5px solid white;
 }
 
 .battle-image {
-	height: 10vh;
+	height: 100%;
 	width: 100%;
 
-	// background-image: url(../../../dist/images/ww2.jpg);
-}
-
-.info-container {
-	width: 100%;
-
-	display: flex;
-	flex-direction: column;
-
-	border: 1px solid white;
+	background-image: url('../images/ww2.jpg');
 }
 
 .battle-title {
 	font-size: 1.7rem;
 	font-weight: 600;
+
+	background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
 }
 
-.data-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.details-container {
+	height: 100%;
+	width: 100%;
 
-	border: 1px solid white;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+}
+
+.details-container-hide {
+	display: none;
+}
+
+.details-container-show {
+	display: flex;
 }
 
 .battle-details {
