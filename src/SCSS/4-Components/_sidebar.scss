@@ -8,9 +8,12 @@
 	flex-direction: column;
 
 	text-align: center;
+
+	overflow-y: scroll;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 
-.sidebar-battle {
-	height: 100%;
-	width: 50vw;
+.sidebar::-webkit-scrollbar {
+	display: none; /* for Chrome, Safari, and Opera */
 }
