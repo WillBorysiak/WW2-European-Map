@@ -1,19 +1,9 @@
 WW2 Map Planning
 
- Create basic layout for the page - DONE
+Current Task - Style the battle Li 
 
- Add google maps interface into the UI - DONE
+Tasks:
 
-Make responsive for mobile - DONE
+Render battle item function
 
- Make sidebar expand once battle is selected - DONE
 
- Create battle cards in sidebar
-
- Make battle cards responsive
-
- Create map markers for locations
-
- **EXTRA FUNCTIONALITY**
-
- Create the data in JSON file
