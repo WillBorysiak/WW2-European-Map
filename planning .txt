@@ -1,9 +1,13 @@
 WW2 Map Planning
 
-Current Task - Style the battle Li 
+Current Task - Create card for sidebar
 
-Tasks:
 
-Render battle item function
+Next Tasks:
 
+Render battles in sidebar
+
+Map zoom when battle is clicked 
+(Create event listener for when battle is clicked, map.setView is called with battle coords and zoom)
+(id is given to element, once clicked, it searches for the battle with that ID and zooms in using those coords)
 

@@ -4,15 +4,15 @@
 
 import '../SCSS/main.scss';
 import * as qS from './querySelectors.js';
-import { battlesArray } from './battlesArray';
-import { redIcon } from './appUtility';
+import { battleData } from './battleData.js';
 
 class App {
 	map;
 	constructor() {
 		this.renderMap();
-		// this.showInfoView();
-		// this.hideInfoView();
+		this.renderImages();
+		this.showInfoView();
+		this.hideInfoView();
 	}
 
 	renderMap() {
@@ -32,8 +32,8 @@ class App {
 		});
 
 		// Markers
-		battlesArray.forEach(battle => {
-			L.marker(battle.coords, { icon: redIcon }).addTo(map).bindPopup(battle.battleName);
+		battleData().forEach(battle => {
+			L.marker(battle.coords, { icon: redIcon, title: battle.id }).addTo(map).bindPopup(battle.name);
 		});
 	}
 
@@ -90,19 +90,32 @@ class App {
 		`;
 	}
 
+	renderImages() {
+		qS.sidebarDiv.style.backgroundImage = `url(${planeImage})`;
+		qS.battleImage.style.backgroundImage = `url(${ww2})`;
+	}
+
 	showInfoView() {
-		console.log();
 		qS.battleItem.addEventListener('mouseover', function (e) {
 			qS.detailsContainer.classList.remove('details-container-hide');
 			qS.detailsContainer.classList.add('details-container-show');
+			qS.battleImage.classList.add('battle-image-blur');
 		});
 	}
 	hideInfoView() {
 		qS.battleItem.addEventListener('mouseleave', function (e) {
 			qS.detailsContainer.classList.remove('details-container-show');
 			qS.detailsContainer.classList.add('details-container-hide');
+			qS.battleImage.classList.remove('battle-image-blur');
 		});
 	}
 }
 
 const app = new App();
+
+// Image Imports
+import planeImage from '../images/ww2Plane.jpg';
+import ww2 from '../images/ww2.jpg';
+
+// Marker Imports
+import { redIcon } from './appUtility';

@@ -24,8 +24,10 @@
 .battle-image {
 	height: 100%;
 	width: 100%;
+}
 
-	background-image: url('../images/ww2.jpg');
+.battle-image-blur {
+	filter: blur(3px);
 }
 
 .battle-title {
