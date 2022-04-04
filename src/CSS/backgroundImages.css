@@ -1,5 +1,7 @@
 .sidebar {
-	background-image: url('../images/ww2Plane.jpg');
+	background-image: url('../images/sidebar-background.jpg');
+	background-size: cover;
+	background-position: center center;
 }
 
 #atlantic-img {
@@ -44,7 +46,7 @@
 	background-position: center center;
 }
 
-#kursk {
+#kursk-img {
 	background-image: url('../images/ww2-kursk.jpg');
 	background-size: cover;
 	background-position: center center;
