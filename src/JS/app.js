@@ -3,6 +3,7 @@
 // Imports
 
 import '../SCSS/main.scss';
+import '../CSS/backgroundImages.css';
 import * as qS from './querySelectors.js';
 import { battleData } from './battleData.js';
 
@@ -10,9 +11,7 @@ class App {
 	map;
 	constructor() {
 		this.renderMap();
-		this.renderImages();
-		this.showInfoView();
-		this.hideInfoView();
+		this.renderBattles();
 	}
 
 	renderMap() {
@@ -37,24 +36,27 @@ class App {
 		});
 	}
 
+	// Render Battles
 	renderBattles() {
-		let html = `
-		<li class="battle">
-					<div class="battle-image"></div>
-					<h2 class="battle-title">Title of the Battle</h2>
-					<div class="details-container details-container-hide">
-						<div class="battle-details">
-							<span class="battle-info">Location:</span>
-							<span class="battle-value">*Exact Location - Country*</span>
-						</div>
-						<div class="battle-details">
+		battleData().forEach(battle => {
+			const li = document.createElement('li');
+			li.classList.add('battle');
+			li.id = battle.id;
+			li.innerHTML = `
+			<div id="${battle.img_id}" class="battle-image"></div>
+						<h2 class="battle-title">${battle.name}</h2>
+						<div class="details-container">
+							<div class="battle-details">
+								<span class="battle-info">Date</span>
+								<span class="battle-value">${battle.date}</span>
+							</div>
+							<div class="battle-details">
 							<span class="battle-info">Factions</span>
 							<div class="faction-container">
 								<span class="faction-flag">🏳️‍🌈</span>
-								<span class="faction-flag">km</span>
+								<span class="faction-flag">🏳️‍🌈</span>
 							</div>
-						</div>
-						<div class="battle-details">
+							<div class="battle-details">
 							<span class="battle-icon">Manpower</span>
 							<div class="faction-container">
 								<span class="faction-manpower">Manpower</span>
@@ -62,60 +64,23 @@ class App {
 							</div>
 						</div>
 					</div>
-				</li>
-				<li class="battle">
-					<div class="battle-image"></div>
-					<h2 class="battle-title">Title of the Battle</h2>
-					<div class="details-container details-container-hide">
-						<div class="battle-details">
-							<span class="battle-info">Location:</span>
-							<span class="battle-value">*Exact Location - Country*</span>
-						</div>
-						<div class="battle-details">
-							<span class="battle-info">Factions</span>
-							<div class="faction-container">
-								<span class="faction-flag">🏳️‍🌈</span>
-								<span class="faction-flag">km</span>
-							</div>
-						</div>
-						<div class="battle-details">
-							<span class="battle-icon">Manpower</span>
-							<div class="faction-container">
-								<span class="faction-manpower">Manpower</span>
-								<span class="faction-manpower">Manpower</span>
-							</div>
-						</div>
-					</div>
-				</li>
-		`;
-	}
-
-	renderImages() {
-		qS.sidebarDiv.style.backgroundImage = `url(${planeImage})`;
-		qS.battleImage.style.backgroundImage = `url(${ww2})`;
-	}
-
-	showInfoView() {
-		qS.battleItem.addEventListener('mouseover', function (e) {
-			qS.detailsContainer.classList.remove('details-container-hide');
-			qS.detailsContainer.classList.add('details-container-show');
-			qS.battleImage.classList.add('battle-image-blur');
-		});
-	}
-	hideInfoView() {
-		qS.battleItem.addEventListener('mouseleave', function (e) {
-			qS.detailsContainer.classList.remove('details-container-show');
-			qS.detailsContainer.classList.add('details-container-hide');
-			qS.battleImage.classList.remove('battle-image-blur');
+			`;
+			// Toggle Data
+			li.addEventListener('click', function (e) {
+				const details = li.querySelector('.details-container');
+				// Reset other battles
+				document.querySelectorAll('.details-container-show').forEach(item => {
+					item.classList.remove('details-container-show');
+				});
+				details.classList.add('details-container-show');
+			});
+			// Insert Li to DOM
+			qS.battleContainer.appendChild(li);
 		});
 	}
 }
 
 const app = new App();
-
-// Image Imports
-import planeImage from '../images/ww2Plane.jpg';
-import ww2 from '../images/ww2.jpg';
 
 // Marker Imports
 import { redIcon } from './appUtility';

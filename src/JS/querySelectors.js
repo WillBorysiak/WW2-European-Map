@@ -3,6 +3,7 @@
 // Page Sections
 export const sidebarDiv = document.querySelector('.sidebar');
 export const mapDiv = document.querySelector('.warMap');
+export const battleContainer = document.querySelector('.battle-container');
 
 // Page Items
 export const battleItem = document.querySelector('.battle');

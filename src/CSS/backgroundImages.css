@@ -1,0 +1,75 @@
+.sidebar {
+	background-image: url('../images/ww2Plane.jpg');
+}
+
+#atlantic-img {
+	background-image: url('../images/ww2-atlantic.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#france-img {
+	background-image: url('../images/ww2-france.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#dunkirk-img {
+	background-image: url('../images/ww2-dunkirk.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#britain-img {
+	background-image: url('../images/ww2-britain.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#leningrad-img {
+	background-image: url('../images/ww2-leningrad.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#moscow-img {
+	background-image: url('../images/ww2-moscow.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#stalingrad-img {
+	background-image: url('../images/ww2-stalingrad.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#kursk {
+	background-image: url('../images/ww2-kursk.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#dday-img {
+	background-image: url('../images/ww2-dday.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#marketgarden-img {
+	background-image: url('../images/ww2-marketgarden.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#bulge-img {
+	background-image: url('../images/ww2-bulge.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#berlin-img {
+	background-image: url('../images/ww2-berlin.jpg');
+	background-size: cover;
+	background-position: center center;
+}

@@ -1,14 +1,14 @@
 // Battle Styles
 
 .battle-container {
-	margin-top: 2rem;
+	margin-top: 1rem;
 
 	color: ghostwhite;
 }
 
 .battle {
 	width: 100%;
-	height: 20vh;
+	height: 18vh;
 
 	margin-bottom: 1rem;
 
@@ -46,9 +46,7 @@
 
 	background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%) no-repeat center;
 	background-size: cover;
-}
 
-.details-container-hide {
 	display: none;
 }
 
@@ -61,8 +59,6 @@
 
 	display: flex;
 	flex-direction: column;
-
-	border: 1px solid white;
 }
 
 .faction-container {
