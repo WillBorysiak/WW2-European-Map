@@ -1,16 +1,24 @@
 WW2 Map Planning
 
-Current Task - Create card for sidebar
+Tasks:
+
+Finish card styling
 
 
-Next Tasks:
-
-Render battles in sidebar
-
-Map zoom when battle is clicked and marker goes green
-(Create event listener for when battle is clicked, map.setView is called with battle coords and zoom)
-Use if(innerViewWidth property to load map)
+Map zoom when battle is clicked
+- Get id of battle container using the event click
+- Filter the array to find the matching entry and get the coords
+-Set the map view using the coords with greater zoom
 
 
-(id is given to element, once clicked, it searches for the battle with that ID and zooms in using those coords)
+
+Make the sidebar and map fully responsive
+
+- Make the sidebar scaling work for mobile
+-Use if(innerViewWidth) property to load map for mobile viewports.
+
+
+
+
+
 
