@@ -2,23 +2,11 @@ WW2 Map Planning
 
 Tasks:
 
-Finish card styling
+Make the sidebar fully responsive
+
 
 
 Map zoom when battle is clicked
 - Get id of battle container using the event click
 - Filter the array to find the matching entry and get the coords
 -Set the map view using the coords with greater zoom
-
-
-
-Make the sidebar and map fully responsive
-
-- Make the sidebar scaling work for mobile
--Use if(innerViewWidth) property to load map for mobile viewports.
-
-
-
-
-
-

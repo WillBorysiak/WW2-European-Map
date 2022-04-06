@@ -13,25 +13,37 @@ class App {
 	constructor() {
 		this.renderMap();
 		this.renderBattles();
+		qS.battleContainer.addEventListener('click', this.moveMap());
 	}
 
 	renderMap() {
 		// Map
-		const map = L.map('map').setView([47, 13], 4);
+		this.map = L.map('map').setView([47, 13], 4);
 
 		L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-		}).addTo(map);
+		}).addTo(this.map);
+
+		// Responsive Map View
+		if (window.innerWidth < 550) {
+			this.map.setView([50, 12], 4);
+		}
+		if (window.innerWidth < 450) {
+			this.map.setView([50, 5], 4);
+		}
+		if (window.innerWidth < 400) {
+			this.map.setView([50, 3], 4);
+		}
+
+		// Markers
+		battleData().forEach(battle => {
+			L.marker(battle.coords, { icon: redIcon, title: battle.id }).addTo(this.map).bindPopup(battle.name);
+		});
 
 		// map.on('click', function (e) {
 		// 	console.log(e.latlng.lat);
 		// 	console.log(e.latlng.lng);
 		// });
-
-		// Markers
-		battleData().forEach(battle => {
-			L.marker(battle.coords, { icon: redIcon, title: battle.id }).addTo(map).bindPopup(battle.name);
-		});
 	}
 
 	// Render Battles
@@ -60,8 +72,8 @@ class App {
 					<div id="casualties" class="battle-details">
 							<span class="battle-icon">Casualties</span>
 							<div class="faction-container">
-									<span class="faction-casualties">Casualties</span>
-									<span class="faction-casualties">Casualties</span>
+									<span class="faction-casualties">${battle.casualties.allies}</span>
+									<span class="faction-casualties">${battle.casualties.axis}</span>
 							</div>
 					</div>
 			</article>
@@ -86,14 +98,22 @@ class App {
 					details.classList.add('details-container-show');
 					image.classList.add('battle-image-blur');
 				}
+				// Map View
+				// Change Map View
+				// let mapTest = e.target.closest('li').id;
+				// console.log(mapTest);
 			});
 
 			// Insert Li to DOM
 			qS.battleContainer.appendChild(li);
 
+			// Render Flags
 			renderFlags(battle.allied_forces, 'allies', battle.id);
 			renderFlags(battle.axis_forces, 'axis', battle.id);
 		});
+	}
+	moveMap() {
+		console.log('test');
 	}
 }
 

@@ -6,6 +6,10 @@
 			"coords": [51.120749121123474, -21.14596820310109],
 			"allied_forces": ["united-kingdom", "usa", "canada"],
 			"axis_forces": ["germany", "italy"],
+			"casualties": {
+				"allies": "36,200",
+				"axis": "30,000"
+			},
 			"id": "atlantic",
 			"img_id": "atlantic-img"
 		},
@@ -15,6 +19,10 @@
 			"coords": [48.80454077006102, 2.3487925816784827],
 			"allied_forces": ["france", "belgium", "united-kingdom", "netherlands"],
 			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "376,734",
+				"axis": "27,074"
+			},
 			"id": "france",
 			"img_id": "france-img"
 		},
@@ -24,6 +32,10 @@
 			"coords": [51.03253551160815, 2.369095775299823],
 			"allied_forces": ["france", "united-kingdom", "belgium", "canada", "netherlands"],
 			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "61,774",
+				"axis": "20,000"
+			},
 			"id": "dunkirk",
 			"img_id": "dunkirk-img"
 		},
@@ -33,6 +45,10 @@
 			"coords": [51.45248705295193, -0.1490947363599138],
 			"allied_forces": ["united-kingdom", "canada"],
 			"axis_forces": ["germany", "italy"],
+			"casualties": {
+				"allies": "1542",
+				"axis": "2585"
+			},
 			"id": "britain",
 			"img_id": "britain-img"
 		},
@@ -42,6 +58,10 @@
 			"coords": [59.95887987771035, 30.312542758668876],
 			"allied_forces": ["soviet-union"],
 			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "3,436,066",
+				"axis": "579,985"
+			},
 			"id": "leningrad",
 			"img_id": "leningrad-img"
 		},
@@ -51,6 +71,10 @@
 			"coords": [55.68803489697475, 37.673420593895756],
 			"allied_forces": ["soviet-union"],
 			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "139,586",
+				"axis": "174,194"
+			},
 			"id": "moscow",
 			"img_id": "moscow-img"
 		},
@@ -60,6 +84,10 @@
 			"coords": [48.71055093887703, 44.508198979739426],
 			"allied_forces": ["soviet-union"],
 			"axis_forces": ["germany", "romania", "italy"],
+			"casualties": {
+				"allies": "1,129,619",
+				"axis": "868,374"
+			},
 			"id": "stalingrad",
 			"img_id": "stalingrad-img"
 		},
@@ -69,6 +97,10 @@
 			"coords": [51.73804587385561, 36.17604894388018],
 			"allied_forces": ["soviet-union"],
 			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "254,470",
+				"axis": "165,314"
+			},
 			"id": "kursk",
 			"img_id": "kursk-img"
 		},
@@ -78,6 +110,10 @@
 			"coords": [49.35731764349393, -0.8457992109479218],
 			"allied_forces": ["united-kingdom", "usa", "canada", "france"],
 			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "10,000",
+				"axis": "7000"
+			},
 			"id": "d-day",
 			"img_id": "dday-img"
 		},
@@ -87,6 +123,10 @@
 			"coords": [51.98277727027846, 5.916720106675798],
 			"allied_forces": ["united-kingdom", "usa", "canada", "poland"],
 			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "15,236",
+				"axis": "13,500"
+			},
 			"id": "marketgarden",
 			"img_id": "marketgarden-img"
 		},
@@ -96,6 +136,10 @@
 			"coords": [50.00271711751032, 5.71785677677053],
 			"allied_forces": ["usa", "united-kingdom", "belgium", "canada", "france"],
 			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "90,900",
+				"axis": "63,222"
+			},
 			"id": "bulge",
 			"img_id": "bulge-img"
 		},
@@ -105,6 +149,10 @@
 			"coords": [52.51820049405036, 13.399067612324352],
 			"allied_forces": ["soviet-union", "poland"],
 			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "81,116",
+				"axis": "92,000"
+			},
 			"id": "berlin",
 			"img_id": "berlin-img"
 		}
