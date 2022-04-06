@@ -1,80 +1,150 @@
 /* Background Images */
 .sidebar {
-	background-image: url('../images/sidebar-background.jpg');
+	background-image: url('..//images/backgrounds/sidebar-background.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #atlantic-img {
-	background-image: url('../images/ww2-atlantic.jpg');
+	background-image: url('../images/backgrounds/ww2-atlantic.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #france-img {
-	background-image: url('../images/ww2-france.jpg');
+	background-image: url('../images//backgrounds/ww2-france.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #dunkirk-img {
-	background-image: url('../images/ww2-dunkirk.jpg');
+	background-image: url('../images//backgrounds/ww2-dunkirk.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #britain-img {
-	background-image: url('../images/ww2-britain.jpg');
+	background-image: url('../images/backgrounds/ww2-britain.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #leningrad-img {
-	background-image: url('../images/ww2-leningrad.jpg');
+	background-image: url('../images//backgrounds/ww2-leningrad.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #moscow-img {
-	background-image: url('../images/ww2-moscow.jpg');
+	background-image: url('../images/backgrounds/ww2-moscow.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #stalingrad-img {
-	background-image: url('../images/ww2-stalingrad.jpg');
+	background-image: url('../images/backgrounds/ww2-stalingrad.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #kursk-img {
-	background-image: url('../images/ww2-kursk.jpg');
+	background-image: url('../images/backgrounds/ww2-kursk.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #dday-img {
-	background-image: url('../images/ww2-dday.jpg');
+	background-image: url('../images//backgrounds/ww2-dday.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #marketgarden-img {
-	background-image: url('../images/ww2-marketgarden.jpg');
+	background-image: url('../images/backgrounds/ww2-marketgarden.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #bulge-img {
-	background-image: url('../images/ww2-bulge.jpg');
+	background-image: url('../images/backgrounds/ww2-bulge.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 #berlin-img {
-	background-image: url('../images/ww2-berlin.jpg');
+	background-image: url('../images//backgrounds/ww2-berlin.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
 /* Faction Images */
+
+/* Allied Flags */
+
+.united-kingdom {
+	background-image: url('../images/flags/ukFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.usa {
+	background-image: url('../images/flags/usaFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.soviet-union {
+	background-image: url('../images/flags/ussrFlag.png');
+	background-size: cover;
+	background-position: left center;
+}
+
+.canada {
+	background-image: url('../images/flags/canadaFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.france {
+	background-image: url('../images/flags/franceFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.belgium {
+	background-image: url('../images/flags/belgiumFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.netherlands {
+	background-image: url('../images/flags/netherlandsFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.poland {
+	background-image: url('../images/flags/polandFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+/* Axis Flags */
+
+.germany {
+	background-image: url('../images/flags/germanyFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.italy {
+	background-image: url('../images/flags/italyFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.romania {
+	background-image: url('../images/flags/romaniaFlag.png');
+	background-size: cover;
+	background-position: center center;
+}

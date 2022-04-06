@@ -6,6 +6,7 @@ import '../SCSS/main.scss';
 import '../CSS/images.css';
 import * as qS from './querySelectors.js';
 import { battleData } from './battleData.js';
+import { renderFlags } from './appUtility';
 
 class App {
 	map;
@@ -45,22 +46,22 @@ class App {
 			<div id="${battle.img_id}" class="battle-image"></div>
 			<h2 class="battle-title">${battle.name}</h2>
 			<article class="details-container">
-					<div class="battle-details">
+					<div id="date" class="battle-details">
 							<span class="battle-info">Date</span>
 							<span class="battle-value">${battle.date}</span>
 					</div>
-					<div class="battle-details">
+					<div id="factions" class="battle-details">
 							<span class="battle-info">Factions</span>
 							<div class="faction-container">
-									<span id="allied-flags" class="faction-flag">Faction</span>
-									<span class="faction-flag">Faction</span>
+									<span id="allies-${battle.id}" class="faction-flag"></span>
+									<span id="axis-${battle.id}" class="faction-flag"></span>
 							</div>
 					</div>
-					<div class="battle-details">
-							<span class="battle-icon">Manpower</span>
+					<div id="casualties" class="battle-details">
+							<span class="battle-icon">Casualties</span>
 							<div class="faction-container">
-									<span class="faction-manpower">Manpower</span>
-									<span class="faction-manpower">Manpower</span>
+									<span class="faction-casualties">Casualties</span>
+									<span class="faction-casualties">Casualties</span>
 							</div>
 					</div>
 			</article>
@@ -89,18 +90,9 @@ class App {
 
 			// Insert Li to DOM
 			qS.battleContainer.appendChild(li);
-		});
 
-		// Country array
-		let testArray = battleData()[0].allied_forces;
-		console.log(testArray);
-		// Target location
-		let alliedFlags = document.getElementById('allied-flags');
-		// Create HTML elements
-		testArray.forEach(country => {
-			let img = document.createElement('img');
-			img.className = country;
-			alliedFlags.appendChild(img);
+			renderFlags(battle.allied_forces, 'allies', battle.id);
+			renderFlags(battle.axis_forces, 'axis', battle.id);
 		});
 	}
 }
@@ -109,19 +101,3 @@ const app = new App();
 
 // Marker Imports
 import { redIcon } from './appUtility';
-
-/* 
-
-Function Tests
-
-*/
-
-// battleData().forEach(battle => {
-// 	let factions = battle.allied_forces;
-// 	factions.forEach(faction => {
-// 		let html = `
-// 		<div class="${faction}"></div>
-// 		`;
-// 		console.log(html);
-// 	});
-// });

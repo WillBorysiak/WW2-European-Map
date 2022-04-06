@@ -10,3 +10,15 @@ export let redIcon = new L.Icon({
 	popupAnchor: [1, -34],
 	shadowSize: [41, 41],
 });
+
+// Render Flags
+
+export const renderFlags = function (array, faction, battle) {
+	let id = faction + '-' + battle;
+	let flagContainer = document.getElementById(id);
+	array.forEach(country => {
+		let img = document.createElement('img');
+		img.className = 'country-flag ' + country;
+		flagContainer.appendChild(img);
+	});
+};
