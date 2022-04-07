@@ -1,6 +1,20 @@
 {
 	"WW2 Battles": [
 		{
+			"name": "Invasion of Poland",
+			"date": "1 September 1939 - 6 October 1939",
+			"coords": [52.22095104847128, 21.00297641877062],
+			"allied_forces": ["poland"],
+			"axis_forces": ["germany", "soviet-union"],
+			"casualties": {
+				"allies": "874,000",
+				"axis": "59,000"
+			},
+			"id": "poland",
+			"img_id": "poland-img",
+			"type": "invasion"
+		},
+		{
 			"name": "Battle of the Atlantic",
 			"date": "3 Sept 1939 - 8 May 1945",
 			"coords": [51.120749121123474, -21.14596820310109],
@@ -11,7 +25,22 @@
 				"axis": "30,000"
 			},
 			"id": "atlantic",
-			"img_id": "atlantic-img"
+			"img_id": "atlantic-img",
+			"type": "battle"
+		},
+		{
+			"name": "Invasion of Norway",
+			"date": "8 April - 10 June 1940",
+			"coords": [59.894396515392366, 10.731093562024887],
+			"allied_forces": ["norway", "united-kingdom", "france", "poland"],
+			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "6602",
+				"axis": "5296"
+			},
+			"id": "norway",
+			"img_id": "norway-img",
+			"type": "invasion"
 		},
 		{
 			"name": "Invasion of Denmark",
@@ -24,7 +53,22 @@
 				"axis": "16"
 			},
 			"id": "denmark",
-			"img_id": "denmark-img"
+			"img_id": "denmark-img",
+			"type": "invasion"
+		},
+		{
+			"name": "Invasion of the Netherlands",
+			"date": "10 May 1940 - 17 May 1940",
+			"coords": [52.36136080829381, 4.8955775013113865],
+			"allied_forces": ["netherlands"],
+			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "2332",
+				"axis": "2032"
+			},
+			"id": "netherlands",
+			"img_id": "netherlands-img",
+			"type": "invasion"
 		},
 		{
 			"name": "Battle of France",
@@ -37,7 +81,8 @@
 				"axis": "27,074"
 			},
 			"id": "france",
-			"img_id": "france-img"
+			"img_id": "france-img",
+			"type": "battle"
 		},
 		{
 			"name": "Battle of Dunkirk",
@@ -50,7 +95,8 @@
 				"axis": "20,000"
 			},
 			"id": "dunkirk",
-			"img_id": "dunkirk-img"
+			"img_id": "dunkirk-img",
+			"type": "battle"
 		},
 		{
 			"name": "Battle of Britain",
@@ -63,8 +109,24 @@
 				"axis": "2585"
 			},
 			"id": "britain",
-			"img_id": "britain-img"
+			"img_id": "britain-img",
+			"type": "battle"
 		},
+		{
+			"name": "Battle of the Mediterranean",
+			"date": "10 June 1940 - 2 May 1945",
+			"coords": [38.236261509510726, 18.698612002559067],
+			"allied_forces": ["united-kingdom", "usa", "canada"],
+			"axis_forces": ["italy", "germany"],
+			"casualties": {
+				"allies": "76 warships",
+				"axis": "83 warships"
+			},
+			"id": "mediterranean",
+			"img_id": "mediterranean-img",
+			"type": "battle"
+		},
+
 		{
 			"name": "Siege of Leningrad",
 			"date": "September 8 1941 - January 27 1944",
@@ -76,7 +138,8 @@
 				"axis": "579,985"
 			},
 			"id": "leningrad",
-			"img_id": "leningrad-img"
+			"img_id": "leningrad-img",
+			"type": "battle"
 		},
 		{
 			"name": "Battle of Moscow",
@@ -89,7 +152,8 @@
 				"axis": "174,194"
 			},
 			"id": "moscow",
-			"img_id": "moscow-img"
+			"img_id": "moscow-img",
+			"type": "battle"
 		},
 		{
 			"name": "Battle of Stalingrad",
@@ -102,7 +166,8 @@
 				"axis": "868,374"
 			},
 			"id": "stalingrad",
-			"img_id": "stalingrad-img"
+			"img_id": "stalingrad-img",
+			"type": "battle"
 		},
 		{
 			"name": "Battle of Kursk",
@@ -115,7 +180,22 @@
 				"axis": "165,314"
 			},
 			"id": "kursk",
-			"img_id": "kursk-img"
+			"img_id": "kursk-img",
+			"type": "battle"
+		},
+		{
+			"name": "Battle of Smolensk",
+			"date": "7 August - 2 October 1943",
+			"coords": [54.77981068132999, 32.06785756101029],
+			"allied_forces": ["soviet-union"],
+			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "107,645",
+				"axis": "70,593"
+			},
+			"id": "smolensk",
+			"img_id": "smolensk-img",
+			"type": "battle"
 		},
 		{
 			"name": "D-Day",
@@ -128,7 +208,8 @@
 				"axis": "7000"
 			},
 			"id": "d-day",
-			"img_id": "dday-img"
+			"img_id": "dday-img",
+			"type": "battle"
 		},
 		{
 			"name": "Operation Market Garden",
@@ -141,8 +222,24 @@
 				"axis": "13,500"
 			},
 			"id": "marketgarden",
-			"img_id": "marketgarden-img"
+			"img_id": "marketgarden-img",
+			"type": "battle"
 		},
+		{
+			"name": "Battle of Hürtgen Forest",
+			"date": "19 Sept - 16 Dec 1944",
+			"coords": [50.71170922578039, 6.379915125858476],
+			"allied_forces": ["usa"],
+			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "33,000",
+				"axis": "28,000"
+			},
+			"id": "hurtgen",
+			"img_id": "hurtgen-img",
+			"type": "battle"
+		},
+
 		{
 			"name": "Battle of the Bulge",
 			"date": "16 Dec 1944 - 25 Jan 1945",
@@ -154,7 +251,8 @@
 				"axis": "63,222"
 			},
 			"id": "bulge",
-			"img_id": "bulge-img"
+			"img_id": "bulge-img",
+			"type": "battle"
 		},
 		{
 			"name": "Battle of Berlin",
@@ -167,7 +265,8 @@
 				"axis": "92,000"
 			},
 			"id": "berlin",
-			"img_id": "berlin-img"
+			"img_id": "berlin-img",
+			"type": "battle"
 		}
 	]
 }

@@ -2,12 +2,9 @@ WW2 Map Planning
 
 Tasks:
 
+Battles and Invasions 
+
+Blue marker for Invasion
+Red marker for battle
+
 Make the sidebar fully responsive
-
-
-
-Get ID of click battle -  DONE
-
-Get matching ID of marker
-
-Run .openPopup() on that marker

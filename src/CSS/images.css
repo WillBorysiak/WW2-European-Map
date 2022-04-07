@@ -6,14 +6,32 @@
 	background-position: center center;
 }
 
+#poland-img {
+	background-image: url('..//images/backgrounds/ww2-poland.png');
+	background-size: cover;
+	background-position: center center;
+}
+
 #atlantic-img {
 	background-image: url('../images/backgrounds/ww2-atlantic.jpg');
 	background-size: cover;
 	background-position: center center;
 }
 
+#norway-img {
+	background-image: url('../images/backgrounds/ww2-norway.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
 #denmark-img {
 	background-image: url('../images/backgrounds/ww2-denmark.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#netherlands-img {
+	background-image: url('../images//backgrounds/ww2-netherlands.jpg');
 	background-size: cover;
 	background-position: center center;
 }
@@ -32,6 +50,12 @@
 
 #britain-img {
 	background-image: url('../images/backgrounds/ww2-britain.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#mediterranean-img {
+	background-image: url('../images//backgrounds/ww2-mediterranean.jpg');
 	background-size: cover;
 	background-position: center center;
 }
@@ -60,6 +84,12 @@
 	background-position: center center;
 }
 
+#smolensk-img {
+	background-image: url('../images/backgrounds/ww2-smolensk.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
 #dday-img {
 	background-image: url('../images//backgrounds/ww2-dday.jpg');
 	background-size: cover;
@@ -68,6 +98,12 @@
 
 #marketgarden-img {
 	background-image: url('../images/backgrounds/ww2-marketgarden.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#hurtgen-img {
+	background-image: url('../images/backgrounds/ww2-hurtgen.jpg');
 	background-size: cover;
 	background-position: center center;
 }
@@ -138,6 +174,12 @@
 
 .denmark {
 	background-image: url('../images/flags/denmarkFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.norway {
+	background-image: url('../images/flags/norwayFlag.png');
 	background-size: cover;
 	background-position: center center;
 }

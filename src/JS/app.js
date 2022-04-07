@@ -6,14 +6,15 @@ import '../SCSS/main.scss';
 import '../CSS/images.css';
 import * as qS from './querySelectors.js';
 import { battleData } from './battleData.js';
-import { renderFlags } from './appUtility';
+import { renderFlags, toggleData } from './appUtility';
 
 class App {
 	map;
 	constructor() {
 		this.renderMap();
 		this.renderBattles();
-		qS.battleContainer.addEventListener('click', this.moveMap.bind(this));
+		qS.battleContainer.addEventListener('click', this.battleClick.bind(this));
+		qS.mapDiv.addEventListener('click', this.markerClick.bind(this));
 	}
 
 	// Render Map Method
@@ -38,16 +39,19 @@ class App {
 
 		// Markers
 		battleData().forEach(battle => {
-			const marker = L.marker(battle.coords, { icon: redIcon, title: battle.id })
-				.addTo(this.map)
-				.bindPopup(battle.name);
+			if (battle.type === 'invasion') {
+				L.marker(battle.coords, { icon: blueIcon, title: battle.id }).addTo(this.map).bindPopup(battle.name);
+			}
+			if (battle.type === 'battle') {
+				L.marker(battle.coords, { icon: redIcon, title: battle.id }).addTo(this.map).bindPopup(battle.name);
+			}
 		});
 
 		// Logs Map Click *DEV TOOL*
-		// 	this.map.on('click', function (e) {
-		// 		console.log(e.latlng.lat);
-		// 		console.log(e.latlng.lng);
-		// 	});
+		// this.map.on('click', function (e) {
+		// 	console.log(e.latlng.lat);
+		// 	console.log(e.latlng.lng);
+		// });
 	}
 
 	// Render Battles Method
@@ -115,7 +119,7 @@ class App {
 	}
 
 	// Move Map Method
-	moveMap(e) {
+	battleClick(e) {
 		// Cancel if click misses
 		if (e.target.className === 'battle-container') return;
 
@@ -136,14 +140,29 @@ class App {
 				}
 			}
 		}
+
 		// Reset map and markers
 		else {
 			this.map.flyTo([47, 13], 4);
 			this.map.closePopup();
 		}
 	}
+
+	// Marker Click Method
+	markerClick(e) {
+		const eventID = e.target.title;
+		console.log(eventID);
+		const findCoords = battleData().find(battle => battle.id === eventID);
+		const mapCoords = findCoords.coords;
+		this.map.flyTo(mapCoords, 9);
+		const eventBattle = document.getElementById(eventID);
+		const battleDetails = eventBattle.querySelector('.details-container');
+		battleDetails.classList.add('details-container-show');
+	}
 }
+
 const app = new App();
 
 // Marker Import
 import { redIcon } from './appUtility';
+import { blueIcon } from './appUtility';

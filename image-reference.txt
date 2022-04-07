@@ -3,11 +3,17 @@ Background Image References
 Sidebar Background:
 https://unsplash.com/photos/Uk3t05ndSng
 
+Invasion of Poland:
+https://en.wikipedia.org/wiki/Invasion_of_Poland#/media/File:7TP_Polish_Tank.png
+
 Battle of the Atlantic:
 https://www.goodfreephotos.com/historical-battles/world-war-ii/allied-convoy-crossing-the-atlantic-during-world-war-ii.jpg.php
 
 Invasion of Denmark:
 https://commons.wikimedia.org/wiki/File:Tysk_afsp%C3%A6rring_af_%C3%98sterbrogade_i_K%C3%B8benhavn_ved_%C3%98sterport_Station_(5709697800)_(2).jpg
+
+Invasion of the Netherlands:
+https://en.wikipedia.org/wiki/German_invasion_of_the_Netherlands#/media/File:Rotterdam,_Laurenskerk,_na_bombardement_van_mei_1940.jpg
 
 Battle of France:
 https://www.goodfreephotos.com/france/other-france/ruins-of-caen-france-after-world-war-ii.jpg.php
@@ -17,6 +23,9 @@ https://www.iwm.org.uk/collections/item/object/205194324
 
 Battle of Britain:
 https://www.goodfreephotos.com/historical-battles/world-war-ii/german-luftwaffe-heinkel-he-111-bombers-during-battle-of-britain-world-war-ii.jpg.php
+
+Battle of the Mediterranean:
+https://en.wikipedia.org/wiki/Battle_of_the_Mediterranean#/media/File:Italian_battleship_Roma_(1940)_starboard_bow_view.jpg
 
 Siege of Leningrad:
 https://commons.wikimedia.org/wiki/File:RIAN_archive_764_A_battle_in_the_outskirts.jpg
@@ -30,11 +39,17 @@ https://en.wikipedia.org/wiki/Battle_of_Stalingrad#/media/File:StalingradRus.jpg
 Battle of Kursk:
 https://en.wikipedia.org/wiki/Battle_of_Kursk#/media/File:Bundesarchiv_Bild_101I-219-0596-12,_Russland,_Panzer_IV_und_Sch%C3%BCtzenpanzer_in_Fahrt.jpg
 
+Battle of Smolensk:
+https://commons.wikimedia.org/wiki/Category:Battle_of_Smolensk_(1943)#/media/File:Bundesarchiv_Bild_101I-686-0080-21,_Russland,_Halbkettenfahrzeug_mit_Nebelwerfer.jpg
+
 D-Day:
 https://www.goodfreephotos.com/historical-battles/world-war-ii/british-troops-coming-ashore-at-gold-beach-d-day-world-war-ii.jpg.php
 
 Operation Market Garden:
 https://en.wikipedia.org/wiki/Operation_Market_Garden#/media/File:Waves_of_paratroops_land_in_Holland.jpg
+
+Battle of Hürtgen_Forest:
+https://en.wikipedia.org/wiki/Battle_of_H%C3%BCrtgen_Forest#/media/File:Muddy_road_in_the_Hurtgen_Forest.jpg
 
 Battle of the Bulge:
 https://www.goodfreephotos.com/historical-battles/world-war-ii/german-troops-advancing-past-abandoned-american-equipment-during-the-battle-of-the-bulge.jpg.php
