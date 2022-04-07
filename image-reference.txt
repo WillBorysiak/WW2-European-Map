@@ -1,10 +1,13 @@
-Image References
+Background Image References
 
 Sidebar Background:
 https://unsplash.com/photos/Uk3t05ndSng
 
 Battle of the Atlantic:
 https://www.goodfreephotos.com/historical-battles/world-war-ii/allied-convoy-crossing-the-atlantic-during-world-war-ii.jpg.php
+
+Invasion of Denmark:
+https://commons.wikimedia.org/wiki/File:Tysk_afsp%C3%A6rring_af_%C3%98sterbrogade_i_K%C3%B8benhavn_ved_%C3%98sterport_Station_(5709697800)_(2).jpg
 
 Battle of France:
 https://www.goodfreephotos.com/france/other-france/ruins-of-caen-france-after-world-war-ii.jpg.php

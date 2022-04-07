@@ -1,4 +1,5 @@
 /* Background Images */
+
 .sidebar {
 	background-image: url('..//images/backgrounds/sidebar-background.jpg');
 	background-size: cover;
@@ -7,6 +8,12 @@
 
 #atlantic-img {
 	background-image: url('../images/backgrounds/ww2-atlantic.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#denmark-img {
+	background-image: url('../images/backgrounds/ww2-denmark.jpg');
 	background-size: cover;
 	background-position: center center;
 }
@@ -125,6 +132,12 @@
 
 .poland {
 	background-image: url('../images/flags/polandFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.denmark {
+	background-image: url('../images/flags/denmarkFlag.png');
 	background-size: cover;
 	background-position: center center;
 }

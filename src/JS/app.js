@@ -13,9 +13,10 @@ class App {
 	constructor() {
 		this.renderMap();
 		this.renderBattles();
-		qS.battleContainer.addEventListener('click', this.moveMap());
+		qS.battleContainer.addEventListener('click', this.moveMap.bind(this));
 	}
 
+	// Render Map Method
 	renderMap() {
 		// Map
 		this.map = L.map('map').setView([47, 13], 4);
@@ -24,7 +25,7 @@ class App {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 		}).addTo(this.map);
 
-		// Responsive Map View
+		// Responsive map view
 		if (window.innerWidth < 550) {
 			this.map.setView([50, 12], 4);
 		}
@@ -37,17 +38,21 @@ class App {
 
 		// Markers
 		battleData().forEach(battle => {
-			L.marker(battle.coords, { icon: redIcon, title: battle.id }).addTo(this.map).bindPopup(battle.name);
+			const marker = L.marker(battle.coords, { icon: redIcon, title: battle.id })
+				.addTo(this.map)
+				.bindPopup(battle.name);
 		});
 
-		// map.on('click', function (e) {
-		// 	console.log(e.latlng.lat);
-		// 	console.log(e.latlng.lng);
-		// });
+		// Logs Map Click *DEV TOOL*
+		// 	this.map.on('click', function (e) {
+		// 		console.log(e.latlng.lat);
+		// 		console.log(e.latlng.lng);
+		// 	});
 	}
 
-	// Render Battles
+	// Render Battles Method
 	renderBattles() {
+		// Creates elements from array
 		battleData().forEach(battle => {
 			const li = document.createElement('li');
 			li.classList.add('battle');
@@ -79,7 +84,7 @@ class App {
 			</article>
 			`;
 
-			// Toggle Data
+			// Toggle data
 			li.addEventListener('click', function (e) {
 				// Variables
 				const details = li.querySelector('.details-container');
@@ -98,26 +103,47 @@ class App {
 					details.classList.add('details-container-show');
 					image.classList.add('battle-image-blur');
 				}
-				// Map View
-				// Change Map View
-				// let mapTest = e.target.closest('li').id;
-				// console.log(mapTest);
 			});
 
 			// Insert Li to DOM
 			qS.battleContainer.appendChild(li);
 
-			// Render Flags
+			// Render flags
 			renderFlags(battle.allied_forces, 'allies', battle.id);
 			renderFlags(battle.axis_forces, 'axis', battle.id);
 		});
 	}
-	moveMap() {
-		console.log('test');
+
+	// Move Map Method
+	moveMap(e) {
+		// Cancel if click misses
+		if (e.target.className === 'battle-container') return;
+
+		// Move to battle pin
+		if (e.target.className === 'battle-image battle-image-blur' || e.target.className === 'battle-title') {
+			// Moves map
+			const eventID = e.target.closest('li').id;
+			const findCoords = battleData().find(battle => battle.id === eventID);
+			const mapCoords = findCoords.coords;
+			this.map.flyTo(mapCoords, 9);
+			// Open map marker
+			for (const object in this.map._layers) {
+				if (Object.hasOwnProperty.call(this.map._layers, object)) {
+					const element = this.map._layers[object];
+					if (element.options.title === eventID) {
+						element.openPopup();
+					}
+				}
+			}
+		}
+		// Reset map and markers
+		else {
+			this.map.flyTo([47, 13], 4);
+			this.map.closePopup();
+		}
 	}
 }
-
 const app = new App();
 
-// Marker Imports
+// Marker Import
 import { redIcon } from './appUtility';

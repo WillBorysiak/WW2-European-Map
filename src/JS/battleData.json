@@ -14,6 +14,19 @@
 			"img_id": "atlantic-img"
 		},
 		{
+			"name": "Invasion of Denmark",
+			"date": "9 April 1940",
+			"coords": [55.68646212034496, 12.570403268278506],
+			"allied_forces": ["denmark"],
+			"axis_forces": ["germany"],
+			"casualties": {
+				"allies": "Surrended",
+				"axis": "16"
+			},
+			"id": "denmark",
+			"img_id": "denmark-img"
+		},
+		{
 			"name": "Battle of France",
 			"date": "10 May - 25 June 1940",
 			"coords": [48.80454077006102, 2.3487925816784827],

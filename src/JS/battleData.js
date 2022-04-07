@@ -4,7 +4,7 @@
 
 import data from './battleData.json';
 
-// Data Processing
+// Exporting Data
 
 export const battleData = function () {
 	let rawData = JSON.parse(data);

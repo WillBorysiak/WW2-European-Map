@@ -6,7 +6,8 @@ Make the sidebar fully responsive
 
 
 
-Map zoom when battle is clicked
-- Get id of battle container using the event click
-- Filter the array to find the matching entry and get the coords
--Set the map view using the coords with greater zoom
+Get ID of click battle -  DONE
+
+Get matching ID of marker
+
+Run .openPopup() on that marker
