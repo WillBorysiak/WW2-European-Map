@@ -130,13 +130,15 @@ class App {
 			const findCoords = battleData().find(battle => battle.id === eventID);
 			const mapCoords = findCoords.coords;
 			this.map.flyTo(mapCoords, 9);
+			// Move sidebar to battle
+			const battleLi = document.getElementById(eventID);
+			battleLi.scrollIntoView();
+
 			// Open map marker
 			for (const object in this.map._layers) {
-				if (Object.hasOwnProperty.call(this.map._layers, object)) {
-					const element = this.map._layers[object];
-					if (element.options.title === eventID) {
-						element.openPopup();
-					}
+				const marker = this.map._layers[object];
+				if (marker.options.title === eventID) {
+					marker.openPopup();
 				}
 			}
 		}
@@ -150,11 +152,20 @@ class App {
 
 	// Marker Click Method
 	markerClick(e) {
+		// Miss Click Event
+		if (e.target.id === 'map') return;
+
+		// Marker Open Event
+		// Get event ID
 		const eventID = e.target.title;
-		console.log(eventID);
+		// Move map to event battle
 		const findCoords = battleData().find(battle => battle.id === eventID);
 		const mapCoords = findCoords.coords;
 		this.map.flyTo(mapCoords, 9);
+		// Move sidebar to battle
+		const battleLi = document.getElementById(eventID);
+		battleLi.scrollIntoView();
+		// Load battle data
 		const eventBattle = document.getElementById(eventID);
 		const battleDetails = eventBattle.querySelector('.details-container');
 		battleDetails.classList.add('details-container-show');

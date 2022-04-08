@@ -2,9 +2,11 @@ WW2 Map Planning
 
 Tasks:
 
-Battles and Invasions 
+*Check if battle data is open, if so run below*
 
-Blue marker for Invasion
-Red marker for battle
+Reset map with marker close
+Reset battle with marker close
+
+
 
 Make the sidebar fully responsive
