@@ -2,6 +2,19 @@
 
 // Toggle Data
 
+export const resetBattles = function () {
+	document.querySelectorAll('.details-container-show').forEach(item => {
+		item.classList.remove('details-container-show');
+	});
+};
+
+export const resetImages = function () {
+	// Reset images
+	document.querySelectorAll('.battle-image-blur').forEach(item => {
+		item.classList.remove('battle-image-blur');
+	});
+};
+
 // Render Flags
 
 export const renderFlags = function (array, faction, battle) {

@@ -18,6 +18,12 @@
 	background-position: center center;
 }
 
+#finland-img {
+	background-image: url('../images/backgrounds/ww2-finland.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
 #norway-img {
 	background-image: url('../images/backgrounds/ww2-norway.jpg');
 	background-size: cover;
@@ -180,6 +186,12 @@
 
 .norway {
 	background-image: url('../images/flags/norwayFlag.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.finland {
+	background-image: url('../images/flags/finlandFlag.png');
 	background-size: cover;
 	background-position: center center;
 }

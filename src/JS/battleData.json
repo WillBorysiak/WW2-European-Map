@@ -29,6 +29,20 @@
 			"type": "battle"
 		},
 		{
+			"name": "Invasion of Finland",
+			"date": "30 November 1939 - 13 March 1940",
+			"coords": [62.66331969084125, 31.354180175476273],
+			"allied_forces": ["norway"],
+			"axis_forces": ["soviet-union"],
+			"casualties": {
+				"allies": "25,904",
+				"axis": "167,976"
+			},
+			"id": "finland",
+			"img_id": "finland-img",
+			"type": "invasion"
+		},
+		{
 			"name": "Invasion of Norway",
 			"date": "8 April - 10 June 1940",
 			"coords": [59.894396515392366, 10.731093562024887],
@@ -71,7 +85,7 @@
 			"type": "invasion"
 		},
 		{
-			"name": "Battle of France",
+			"name": "Invasion of France",
 			"date": "10 May - 25 June 1940",
 			"coords": [48.80454077006102, 2.3487925816784827],
 			"allied_forces": ["france", "belgium", "united-kingdom", "netherlands"],
@@ -82,7 +96,7 @@
 			},
 			"id": "france",
 			"img_id": "france-img",
-			"type": "battle"
+			"type": "invasion"
 		},
 		{
 			"name": "Battle of Dunkirk",

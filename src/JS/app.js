@@ -6,7 +6,7 @@ import '../SCSS/main.scss';
 import '../CSS/images.css';
 import * as qS from './querySelectors.js';
 import { battleData } from './battleData.js';
-import { renderFlags, toggleData } from './appUtility';
+import { renderFlags, resetBattles, resetImages } from './appUtility';
 
 class App {
 	map;
@@ -19,7 +19,6 @@ class App {
 
 	// Render Map Method
 	renderMap() {
-		// Map
 		this.map = L.map('map').setView([47, 13], 4);
 
 		L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -94,14 +93,9 @@ class App {
 				const details = li.querySelector('.details-container');
 				const image = li.querySelector('.battle-image');
 				const clickedBattle = e.target.closest('article');
-				// Reset data
-				document.querySelectorAll('.details-container-show').forEach(item => {
-					item.classList.remove('details-container-show');
-				});
-				// Reset images
-				document.querySelectorAll('.battle-image-blur').forEach(item => {
-					item.classList.remove('battle-image-blur');
-				});
+				// Reset battles and images
+				resetBattles();
+				resetImages();
 				// Show current battle
 				if (clickedBattle === null) {
 					details.classList.add('details-container-show');
@@ -118,22 +112,22 @@ class App {
 		});
 	}
 
-	// Move Map Method
+	// Battle Click Method
 	battleClick(e) {
-		// Cancel if click misses
+		// Missed click
 		if (e.target.className === 'battle-container') return;
 
-		// Move to battle pin
+		// Clicked closed battle
 		if (e.target.className === 'battle-image battle-image-blur' || e.target.className === 'battle-title') {
-			// Moves map
+			// Variables
 			const eventID = e.target.closest('li').id;
 			const findCoords = battleData().find(battle => battle.id === eventID);
 			const mapCoords = findCoords.coords;
+			// Moves map
 			this.map.flyTo(mapCoords, 9);
 			// Move sidebar to battle
 			const battleLi = document.getElementById(eventID);
 			battleLi.scrollIntoView();
-
 			// Open map marker
 			for (const object in this.map._layers) {
 				const marker = this.map._layers[object];
@@ -143,7 +137,7 @@ class App {
 			}
 		}
 
-		// Reset map and markers
+		// Clicked open battle
 		else {
 			this.map.flyTo([47, 13], 4);
 			this.map.closePopup();
@@ -152,26 +146,37 @@ class App {
 
 	// Marker Click Method
 	markerClick(e) {
-		// Miss Click Event
+		// Missed click
 		if (e.target.id === 'map') return;
 
-		// Marker Open Event
-		// Get event ID
-		const eventID = e.target.title;
-		// Move map to event battle
-		const findCoords = battleData().find(battle => battle.id === eventID);
-		const mapCoords = findCoords.coords;
-		this.map.flyTo(mapCoords, 9);
-		// Move sidebar to battle
-		const battleLi = document.getElementById(eventID);
-		battleLi.scrollIntoView();
-		// Load battle data
-		const eventBattle = document.getElementById(eventID);
-		const battleDetails = eventBattle.querySelector('.details-container');
-		battleDetails.classList.add('details-container-show');
+		// Check for open battles
+		const openBattle = document.querySelectorAll('.details-container-show');
+
+		// Closed Marker Click
+		if (openBattle.length === 0) {
+			// Get event ID
+			const eventID = e.target.title;
+			// Move map to event battle
+			const findCoords = battleData().find(battle => battle.id === eventID);
+			const mapCoords = findCoords.coords;
+			this.map.flyTo(mapCoords, 9);
+			// Move sidebar to battle
+			const battleLi = document.getElementById(eventID);
+			battleLi.scrollIntoView();
+			// Load battle data
+			const eventBattle = document.getElementById(eventID);
+			const battleDetails = eventBattle.querySelector('.details-container');
+			battleDetails.classList.add('details-container-show');
+		}
+
+		// Open Marker Click
+		if (openBattle.length === 1) {
+			resetBattles();
+			resetImages();
+			this.map.flyTo([47, 13], 4);
+		}
 	}
 }
-
 const app = new App();
 
 // Marker Import
