@@ -55,10 +55,10 @@
 
 .battle-details {
 	margin: 0.2rem;
+	margin-bottom: 1rem;
 
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 1rem;
 }
 
 .faction-container {
@@ -72,9 +72,10 @@
 }
 
 .faction-flag {
+	height: 2rem;
+
 	display: flex;
 	flex-direction: row;
-	height: 2rem;
 }
 
 .country-flag {

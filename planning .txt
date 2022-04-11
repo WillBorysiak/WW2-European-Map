@@ -7,3 +7,7 @@ Responsive Design
 Mobile = Open battle covers the entire sidebar
 
 Laptop = Scaling with the height of each battle
+
+
+
+Sort when you close the popup via the X.

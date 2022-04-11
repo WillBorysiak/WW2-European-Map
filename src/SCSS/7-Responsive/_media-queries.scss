@@ -3,58 +3,84 @@
 // Imports
 @use '../1-Abstracts/index' as mQ;
 
-// Small Mobile
+// Small Mobile (Less than 320px)
 
 @media screen and (max-width: mQ.$smallMobile) {
 	body {
 		flex-direction: column-reverse;
 	}
+	.battle-container {
+		margin-top: 0;
+	}
 	.sidebar {
-		height: 40vh;
+		height: 45vh;
 		width: 100%;
 	}
-
 	.warMap {
-		height: 60vh;
+		height: 55vh;
 		width: 100%;
+	}
+	.battle {
+		height: 45vh;
+	}
+	.battle-title {
+		font-size: 1.5rem;
+	}
+	.country-flag {
+		height: 1.75rem;
+		width: 2.75rem;
 	}
 }
-
-// Mobile
+// Mobile (320px - 480px)
 
 @media screen and (min-width: mQ.$mobileMin) and (max-width: mQ.$mobileMax) {
 	body {
 		flex-direction: column-reverse;
 	}
+	.battle-container {
+		margin-top: 0;
+	}
 	.sidebar {
-		height: 40vh;
+		height: 45vh;
 		width: 100%;
 	}
-
 	.warMap {
-		height: 60vh;
+		height: 55vh;
 		width: 100%;
+	}
+	.battle {
+		height: 45vh;
+	}
+	.battle-title {
+		font-size: 1.5rem;
+	}
+	.country-flag {
+		height: 1.75rem;
+		width: 2.75rem;
 	}
 }
 
-// Tablet
+// Tablet (481px - 768px)
 
 @media screen and (min-width: mQ.$tabletMin) and (max-width: mQ.$tabletMax) {
 	body {
 		flex-direction: column-reverse;
 	}
 	.sidebar {
-		height: 40vh;
+		height: 45vh;
 		width: 100%;
 	}
 
 	.warMap {
-		height: 60vh;
+		height: 55vh;
 		width: 100%;
+	}
+	.battle {
+		height: 45vh;
 	}
 }
 
-// Laptop
+// Laptop (769px - 1024px)
 
 @media screen and (min-width: mQ.$laptopMin) and (max-width: mQ.$laptopMax) {
 	body {
@@ -69,11 +95,31 @@
 		height: 55vh;
 		width: 100%;
 	}
+	.battle {
+		height: 35vh;
+	}
 }
 
-// Desktop
+// Desktop (1025px - 1200px)
 
 @media screen and (min-width: mQ.$desktopMin) and (max-width: mQ.$desktopMax) {
+	body {
+		flex-direction: row;
+	}
+	.sidebar {
+		height: 100%;
+		width: 45vw;
+	}
+
+	.warMap {
+		height: 100%;
+		width: 55vw;
+	}
+}
+
+// Wide Desktop (1201px +)
+
+@media screen and (min-width: mQ.$wideDesktop) {
 	body {
 		flex-direction: row;
 	}
@@ -85,22 +131,5 @@
 	.warMap {
 		height: 100%;
 		width: 60vw;
-	}
-}
-
-// Wide Desktop
-
-@media screen and (min-width: mQ.$wideDesktop) {
-	body {
-		flex-direction: row;
-	}
-	.sidebar {
-		height: 100%;
-		width: 35vw;
-	}
-
-	.warMap {
-		height: 100%;
-		width: 65vw;
 	}
 }

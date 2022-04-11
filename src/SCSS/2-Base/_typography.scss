@@ -5,8 +5,23 @@ body {
 }
 
 // Battle Title
-
 .battle-title {
-	font-size: 1.7rem;
+	font-size: 1.75rem;
 	font-weight: 600;
+}
+
+// Details Headings
+.details-title {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+// Date Details
+.battle-date {
+	font-size: 1rem;
+}
+
+// Casualties Details
+.faction-casualties {
+	font-size: 1rem;
 }

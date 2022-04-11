@@ -26,23 +26,30 @@ class App {
 		}).addTo(this.map);
 
 		// Responsive map view
-		if (window.innerWidth < 550) {
-			this.map.setView([50, 12], 4);
+		if (window.innerWidth < 1025) {
+			this.map.setView([57, 15], 4);
 		}
-		if (window.innerWidth < 450) {
-			this.map.setView([50, 5], 4);
+		if (window.innerWidth < 550 && window.innerWidth > 451) {
+			this.map.setView([50, 10], 4);
+		}
+		if (window.innerWidth < 450 && window.innerWidth > 401) {
+			this.map.setView([50, 7], 4);
 		}
 		if (window.innerWidth < 400) {
-			this.map.setView([50, 3], 4);
+			this.map.setView([50, 8], 4);
 		}
 
 		// Markers
 		battleData().forEach(battle => {
 			if (battle.type === 'invasion') {
-				L.marker(battle.coords, { icon: blueIcon, title: battle.id }).addTo(this.map).bindPopup(battle.name);
+				L.marker(battle.coords, { icon: blueIcon, title: battle.id })
+					.addTo(this.map)
+					.bindPopup(battle.name, { closeButton: false, closeOnClick: false });
 			}
 			if (battle.type === 'battle') {
-				L.marker(battle.coords, { icon: redIcon, title: battle.id }).addTo(this.map).bindPopup(battle.name);
+				L.marker(battle.coords, { icon: redIcon, title: battle.id })
+					.addTo(this.map)
+					.bindPopup(battle.name, { closeButton: false, closeOnClick: false });
 			}
 		});
 
@@ -67,18 +74,18 @@ class App {
 			<h2 class="battle-title">${battle.name}</h2>
 			<article class="details-container">
 					<div id="date" class="battle-details">
-							<span class="battle-info">Date</span>
-							<span class="battle-value">${battle.date}</span>
+							<span class="battle-info details-title">Date</span>
+							<span class="battle-value battle-date">${battle.date}</span>
 					</div>
 					<div id="factions" class="battle-details">
-							<span class="battle-info">Factions</span>
+							<span class="battle-info details-title">Factions</span>
 							<div class="faction-container">
 									<span id="allies-${battle.id}" class="faction-flag"></span>
 									<span id="axis-${battle.id}" class="faction-flag"></span>
 							</div>
 					</div>
 					<div id="casualties" class="battle-details">
-							<span class="battle-icon">Casualties</span>
+							<span class="battle-icon details-title">Casualties</span>
 							<div class="faction-container">
 									<span class="faction-casualties">${battle.casualties.allies}</span>
 									<span class="faction-casualties">${battle.casualties.axis}</span>
@@ -147,7 +154,12 @@ class App {
 	// Marker Click Method
 	markerClick(e) {
 		// Missed click
-		if (e.target.id === 'map') return;
+		if (
+			e.target.id === 'map' ||
+			e.target.className === 'leaflet-popup-content' ||
+			e.target.className === 'leaflet-popup-content-wrapper'
+		)
+			return;
 
 		// Check for open battles
 		const openBattle = document.querySelectorAll('.details-container-show');
@@ -167,6 +179,8 @@ class App {
 			const eventBattle = document.getElementById(eventID);
 			const battleDetails = eventBattle.querySelector('.details-container');
 			battleDetails.classList.add('details-container-show');
+			// Blur Image
+			document.getElementById(`${eventID}-img`).classList.add('battle-image-blur');
 		}
 
 		// Open Marker Click
