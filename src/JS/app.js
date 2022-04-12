@@ -2,14 +2,16 @@
 
 // Imports
 
-import '../SCSS/main.scss';
-import '../CSS/images.css';
+import '../sass/main.scss';
+import '../css/images.css';
 import * as qS from './querySelectors.js';
 import { battleData } from './battleData.js';
 import { renderFlags, resetBattles, resetImages } from './appUtility';
 
 class App {
 	map;
+	markerArray;
+
 	constructor() {
 		this.renderMap();
 		this.renderBattles();
@@ -52,6 +54,24 @@ class App {
 					.bindPopup(battle.name, { closeButton: false, closeOnClick: false });
 			}
 		});
+
+		// Create marker array
+		// let markerArray = [];
+		// for (const object in this.map._layers) {
+		// 	const marker = this.map._layers[object];
+		// 	markerArray.push(marker);
+		// }
+
+		// markerArray.shift();
+		// console.log(markerArray);
+
+		// markerArray.forEach(marker => {
+		// 	marker.addEventListener('click', function (e) {
+		// 		console.log(e.target);
+		// 	});
+		// });
+
+		// Add marker event
 
 		// Logs Map Click *DEV TOOL*
 		// this.map.on('click', function (e) {
@@ -160,8 +180,6 @@ class App {
 			e.target.className === 'leaflet-popup-content-wrapper'
 		)
 			return;
-
-		console.log(e.target);
 
 		// Check for open battles
 		const openBattle = document.querySelectorAll('.details-container-show');
