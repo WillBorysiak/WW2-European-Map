@@ -13,8 +13,8 @@ class App {
 	constructor() {
 		this.renderMap();
 		this.renderBattles();
-		qS.battleContainer.addEventListener('click', this.battleClick.bind(this));
-		qS.mapDiv.addEventListener('click', this.markerClick.bind(this));
+		qS.sidebar.addEventListener('click', this.battleClick.bind(this));
+		qS.map.addEventListener('click', this.markerClick.bind(this));
 	}
 
 	// Render Map Method
@@ -160,6 +160,8 @@ class App {
 			e.target.className === 'leaflet-popup-content-wrapper'
 		)
 			return;
+
+		console.log(e.target);
 
 		// Check for open battles
 		const openBattle = document.querySelectorAll('.details-container-show');
