@@ -6,11 +6,11 @@ import '../sass/main.scss';
 import '../css/images.css';
 import * as qS from './querySelectors.js';
 import { battleData } from './battleData.js';
-import { renderFlags, resetBattles, resetImages } from './appUtility';
+import { renderFlags, resetBattles, resetImages } from './appUtility.js';
 
 class App {
 	map;
-	markerArray;
+	// markerArray = [];
 
 	constructor() {
 		this.renderMap();
@@ -21,7 +21,7 @@ class App {
 
 	// Render Map Method
 	renderMap() {
-		this.map = L.map('map').setView([47, 13], 4);
+		this.map = L.map('map', { tap: false }).setView([47, 13], 4);
 
 		L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -55,29 +55,22 @@ class App {
 			}
 		});
 
-		// Create marker array
-		// let markerArray = [];
+		/* *DEV TOOLS*
+
+		// Marker Array
 		// for (const object in this.map._layers) {
 		// 	const marker = this.map._layers[object];
-		// 	markerArray.push(marker);
+		// 	this.markerArray.push(marker);
 		// }
+		// this.markerArray.shift();
+		// console.log(this.markerArray);
 
-		// markerArray.shift();
-		// console.log(markerArray);
-
-		// markerArray.forEach(marker => {
-		// 	marker.addEventListener('click', function (e) {
-		// 		console.log(e.target);
-		// 	});
-		// });
-
-		// Add marker event
-
-		// Logs Map Click *DEV TOOL*
+		// Logs Map Click 
 		// this.map.on('click', function (e) {
 		// 	console.log(e.latlng.lat);
 		// 	console.log(e.latlng.lng);
 		// });
+		*/
 	}
 
 	// Render Battles Method
@@ -201,6 +194,7 @@ class App {
 			battleDetails.classList.add('details-container-show');
 			// Blur Image
 			document.getElementById(`${eventID}-img`).classList.add('battle-image-blur');
+			// Open Popup
 		}
 
 		// Open Marker Click
@@ -211,6 +205,7 @@ class App {
 		}
 	}
 }
+
 const app = new App();
 
 // Marker Import

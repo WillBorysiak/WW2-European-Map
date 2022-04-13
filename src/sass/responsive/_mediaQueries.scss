@@ -6,6 +6,7 @@
 // Small Mobile (Less than 320px)
 
 @media screen and (max-width: mQ.$smallMobile) {
+	// Layout Styles
 	body {
 		flex-direction: column-reverse;
 	}
@@ -23,6 +24,8 @@
 	.battle {
 		height: 45vh;
 	}
+
+	// Font Styles
 	.battle-title {
 		font-size: 1.5rem;
 	}
@@ -34,6 +37,7 @@
 // Mobile (320px - 480px)
 
 @media screen and (min-width: mQ.$mobileMin) and (max-width: mQ.$mobileMax) {
+	// Layout Styles
 	body {
 		flex-direction: column-reverse;
 	}
@@ -51,6 +55,8 @@
 	.battle {
 		height: 45vh;
 	}
+
+	// Font Styles
 	.battle-title {
 		font-size: 1.5rem;
 	}
@@ -58,11 +64,19 @@
 		height: 1.75rem;
 		width: 2.75rem;
 	}
+	.details-title {
+		font-size: 1.4rem;
+	}
+	.battle-date,
+	.faction-casualties {
+		font-size: 1.25rem;
+	}
 }
 
 // Tablet (481px - 768px)
 
 @media screen and (min-width: mQ.$tabletMin) and (max-width: mQ.$tabletMax) {
+	// Layout Styles
 	body {
 		flex-direction: column-reverse;
 	}
@@ -70,7 +84,6 @@
 		height: 45vh;
 		width: 100%;
 	}
-
 	.map {
 		height: 55vh;
 		width: 100%;
@@ -78,11 +91,23 @@
 	.battle {
 		height: 45vh;
 	}
+	//  Font Styles
+	.battle-title {
+		font-size: 2rem;
+	}
+	.details-title {
+		font-size: 1.4rem;
+	}
+	.battle-date,
+	.faction-casualties {
+		font-size: 1.25rem;
+	}
 }
 
 // Laptop (769px - 1024px)
 
 @media screen and (min-width: mQ.$laptopMin) and (max-width: mQ.$laptopMax) {
+	// Layout Styles
 	body {
 		flex-direction: column-reverse;
 	}
@@ -90,7 +115,6 @@
 		height: 45vh;
 		width: 100%;
 	}
-
 	.map {
 		height: 55vh;
 		width: 100%;
@@ -98,11 +122,23 @@
 	.battle {
 		height: 35vh;
 	}
+	//  Font Styles
+	.battle-title {
+		font-size: 2rem;
+	}
+	.details-title {
+		font-size: 1.4rem;
+	}
+	.battle-date,
+	.faction-casualties {
+		font-size: 1.25rem;
+	}
 }
 
 // Desktop (1025px - 1200px)
 
 @media screen and (min-width: mQ.$desktopMin) and (max-width: mQ.$desktopMax) {
+	// Layout Styles
 	body {
 		flex-direction: row;
 	}
@@ -110,16 +146,21 @@
 		height: 100%;
 		width: 45vw;
 	}
-
 	.map {
 		height: 100%;
 		width: 55vw;
+	}
+	// Font Styles
+	.battle-date,
+	.faction-casualties {
+		font-size: 1.1rem;
 	}
 }
 
 // Wide Desktop (1201px +)
 
 @media screen and (min-width: mQ.$wideDesktop) {
+	// Layout Styles
 	body {
 		flex-direction: row;
 	}
@@ -131,5 +172,17 @@
 	.map {
 		height: 100%;
 		width: 60vw;
+	}
+
+	// Font Styles
+	.battle-title {
+		font-size: 2rem;
+	}
+	.details-title {
+		font-size: 1.2rem;
+	}
+	.battle-date,
+	.faction-casualties {
+		font-size: 1.1rem;
 	}
 }

@@ -9,7 +9,6 @@ export const resetBattles = function () {
 };
 
 export const resetImages = function () {
-	// Reset images
 	document.querySelectorAll('.battle-image-blur').forEach(item => {
 		item.classList.remove('battle-image-blur');
 	});
@@ -37,6 +36,8 @@ export let redIcon = new L.Icon({
 	popupAnchor: [1, -34],
 	shadowSize: [41, 41],
 });
+
+// Blue Marker Variable
 
 export let blueIcon = new L.Icon({
 	iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png',
