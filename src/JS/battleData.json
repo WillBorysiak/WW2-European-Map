@@ -221,7 +221,7 @@
 				"allies": "10,000",
 				"axis": "7000"
 			},
-			"id": "d-day",
+			"id": "dday",
 			"img_id": "dday-img",
 			"type": "battle"
 		},

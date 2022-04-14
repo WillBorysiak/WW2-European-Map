@@ -1,3 +1,1 @@
 WW2 Map Planning
-
-Sort folder structure out in Github for Netlify.

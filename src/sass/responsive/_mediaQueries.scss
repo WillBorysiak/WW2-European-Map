@@ -24,7 +24,9 @@
 	.battle {
 		height: 45vh;
 	}
-
+	.locked {
+		overflow-y: hidden;
+	}
 	// Font Styles
 	.battle-title {
 		font-size: 1.5rem;
@@ -54,6 +56,9 @@
 	}
 	.battle {
 		height: 45vh;
+	}
+	.locked {
+		overflow-y: hidden;
 	}
 
 	// Font Styles
@@ -150,10 +155,16 @@
 		height: 100%;
 		width: 55vw;
 	}
+	.battle {
+		height: 32vh;
+	}
 	// Font Styles
+	.details-title {
+		font-size: 1.3rem;
+	}
 	.battle-date,
 	.faction-casualties {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -173,16 +184,18 @@
 		height: 100%;
 		width: 60vw;
 	}
-
+	.battle {
+		height: 32vh;
+	}
 	// Font Styles
 	.battle-title {
 		font-size: 2rem;
 	}
 	.details-title {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 	.battle-date,
 	.faction-casualties {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 	}
 }
