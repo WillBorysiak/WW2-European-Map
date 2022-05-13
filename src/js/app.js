@@ -148,8 +148,8 @@ class App {
 			// Move sidebar to battle
 			const battleLi = document.getElementById(eventID);
 			battleLi.scrollIntoView();
-			// Lock scrolling
-			qS.sidebar.classList.add('locked');
+			// Lock scrolling (REMOVED FOR iOS SAFARI 'BUG')
+			// qS.sidebar.classList.add('locked');
 			// Open map marker
 			for (const object in this.map._layers) {
 				const marker = this.map._layers[object];
@@ -191,8 +191,8 @@ class App {
 			// Move sidebar to battle
 			const battleLi = document.getElementById(eventID);
 			battleLi.scrollIntoView();
-			// Lock scrolling
-			qS.sidebar.classList.add('locked');
+			// Lock scrolling (REMOVED FOR iOS SAFARI 'BUG')
+			// qS.sidebar.classList.add('locked');
 			// Load battle data
 			const eventBattle = document.getElementById(eventID);
 			const battleDetails = eventBattle.querySelector('.details-container');
@@ -209,8 +209,8 @@ class App {
 			// Map Resets
 			this.map.closePopup();
 			this.map.flyTo([47, 13], 4);
-			// Remove scroll lock
-			qS.sidebar.classList.remove('locked');
+			// Remove scroll lock (REMOVED FOR iOS SAFARI 'BUG')
+			// qS.sidebar.classList.remove('locked');
 		}
 	}
 }
