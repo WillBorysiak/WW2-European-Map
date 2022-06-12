@@ -7,16 +7,43 @@
 <p align="center">To provide an interface to display events of the European theatre in WW2.<p>
 
 <h2 style="color: grey" align="center">Technology used:</h2>
+  
+<div align="center">
+  <div style="display: flex; flex-direction: row">
+    <img align="center" src="https://symbols.getvecta.com/stencil_83/68_html5-icon.09e3da538e.svg" alt="HTML" height="50"/>
+    <p align="center">HTML5</p> 
+ <div>
+</div>
+   
+<div align="center">
+  <div style="display: flex; flex-direction: row">
+    <img align="center" src="https://symbols.getvecta.com/stencil_25/14_css3.d930bfb832.svg" alt="HTML" height="50"/>
+    <p align="center">CSS3</p> 
+  <div>
+</div>
+    
+<div align="center">
+  <div style="display: flex; flex-direction: row">
+    <img align="center" src="https://symbols.getvecta.com/stencil_25/39_javascript.0ca26ec4ab.svg" alt="HTML" height="50"/>
+    <p align="center">JavaScript (ES6+)</p> 
+  <div>
+</div>
 
-<p align="center">HTML5</p>
+<div align="center">
+  <div style="display: flex; flex-direction: row">
+    <img align="center" src="https://symbols.getvecta.com/stencil_95/18_sass.5a8c1431d6.svg" alt="HTML" height="50"/>
+    <p align="center">SASS</p> 
+  <div>
+</div>
 
-<p align="center">CSS3</p>
+<div align="center">
+  <div style="display: flex; flex-direction: row">
+    <img align="center" src="https://symbols.getvecta.com/stencil_101/30_webpack-icon.3aae0e41ed.svg" alt="HTML" height="50"/>
+    <p align="center">Webpack</p> 
+  <div>
+</div>
 
-<p align="center">JavaScript (ES6+)</p>
 
-<p align="center">SASS</p>
-
-<p align="center">Webpack 5</p>
 
 <h2 style="color: grey" align="center">What I learnt:</h2>
 
