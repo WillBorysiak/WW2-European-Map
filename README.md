@@ -1,10 +1,10 @@
 <div>
 
-<h1 style="color: grey" align="center">European WW2 Map</h1>
+<h1 style="color: grey" align="center">WW2 European Map</h1>
 
 <h2 style="color: grey" align="center">Purpose of the App:</h2>
 
-<p align="center">To provide an interface to display events of the European theatre in WW2.<p>
+<p align="center">To provide an application to display infomation of battles in the European theatre of WW2.<p>
 
 <h2 style="color: grey" align="center">Technology used:</h2>
   
@@ -48,7 +48,7 @@
 <h2 style="color: grey" align="center">What I learnt:</h2>
 
 <p align="center">How to use an external library and read their documentation for instructions.</p>
-<p align="center">Structuring an app using the Class syntax with methods and properties.></p>
+<p align="center">Structuring an app using the Class syntax with methods and properties.</p>
 <p align="center">Improved my understanding of Object Oriented Programming by the usage of ‘this’ and the prototype model.</p>
 <p align="center">How to traverse the DOM and handle events to change the appearance of the content.</p>
 <p align="center">Improved my ability to use functional programming to manage data from arrays and objects.</p>
