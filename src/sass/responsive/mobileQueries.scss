@@ -1,0 +1,128 @@
+// Imports
+@use '../abstracts/breakpoints' as mQ;
+
+// Small Mobile (Less than 320px)
+
+@media screen and (max-width: mQ.$smallMobile) {
+	// Layout Styles
+	body {
+		flex-direction: column-reverse;
+	}
+	.battle-container {
+		margin-top: 0;
+	}
+	.sidebar {
+		height: 50vh;
+		width: 100%;
+	}
+	.map {
+		height: 50vh;
+		width: 100%;
+	}
+	.battle {
+		height: 40vh;
+	}
+
+	// Font Styles
+	.battle-title {
+		font-size: 1.25rem;
+	}
+	.battle-details {
+		margin-bottom: 0.5rem;
+	}
+	.country-flag {
+		height: 1.75rem;
+		width: 2.75rem;
+	}
+	.details-title {
+		font-size: 1.2rem;
+	}
+	.battle-date,
+	.faction-casualties {
+		font-size: 1rem;
+	}
+}
+
+// Mobile (320px - 480px)
+
+@media screen and (min-width: mQ.$mobileMin) and (max-width: mQ.$mobileMax) {
+	// Layout Styles
+	body {
+		flex-direction: column-reverse;
+	}
+	.battle-container {
+		margin-top: 0;
+	}
+	.sidebar {
+		height: 50vh;
+		width: 100%;
+	}
+	.map {
+		height: 50vh;
+		width: 100%;
+	}
+	.battle {
+		height: 40vh;
+	}
+
+	// Font Styles
+	.battle-title {
+		font-size: 1.5rem;
+	}
+	.battle-details {
+		margin-bottom: 0.5rem;
+	}
+	.country-flag {
+		height: 1.75rem;
+		width: 2.75rem;
+	}
+	.details-title {
+		font-size: 1.5rem;
+	}
+	.battle-date,
+	.faction-casualties {
+		font-size: 1.15rem;
+	}
+}
+
+// Mobile - Width(320px - 480px) and Height (Above 720px)
+
+@media screen and (min-width: mQ.$mobileMin) and (max-width: mQ.$mobileMax) and (min-height: 720px) {
+	// Layout Styles
+	body {
+		flex-direction: column-reverse;
+	}
+	.battle-container {
+		margin-top: 0;
+	}
+	.sidebar {
+		height: 50vh;
+		width: 100%;
+	}
+	.map {
+		height: 50vh;
+		width: 100%;
+	}
+	.battle {
+		height: 40vh;
+	}
+
+	// Font Styles
+	.battle-title {
+		font-size: 1.6rem;
+	}
+	.battle-details {
+		margin-bottom: 0.5rem;
+	}
+	.country-flag {
+		height: 1.75rem;
+		width: 2.75rem;
+	}
+	.details-title {
+		font-size: 1.5rem;
+	}
+	.battle-date,
+	.faction-casualties {
+		font-size: 1.25rem;
+	}
+}

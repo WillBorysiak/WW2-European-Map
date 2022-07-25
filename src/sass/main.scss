@@ -26,7 +26,9 @@
 @use 'animations/textAnimations';
 
 // Media Queries
-@use 'responsive/mediaQueries';
+@use 'responsive/mobileQueries.scss';
+@use 'responsive/tabletLaptopQueries.scss';
+@use 'responsive/desktopQueries.scss';
 
 // Utility
 @use 'utility/utility';

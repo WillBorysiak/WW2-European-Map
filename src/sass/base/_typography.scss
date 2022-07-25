@@ -14,4 +14,15 @@ body {
 .details-title {
 	font-size: 1.2rem;
 	font-weight: 400;
+	text-decoration: underline;
+}
+
+// Battle Values
+
+.battle-value {
+	font-style: italic;
+}
+
+.faction-casualties {
+	font-style: italic;
 }

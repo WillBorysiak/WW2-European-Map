@@ -10,9 +10,9 @@ import { renderFlags, resetBattles, resetImages } from './appUtility.js';
 
 class App {
 	map;
-	// markerArray = [];
 
 	constructor() {
+		// On Load Functions
 		this.renderMap();
 		this.renderBattles();
 		qS.sidebar.addEventListener('click', this.battleClick.bind(this));

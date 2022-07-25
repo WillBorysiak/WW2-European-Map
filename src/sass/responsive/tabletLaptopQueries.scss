@@ -1,0 +1,95 @@
+// Imports
+@use '../abstracts/breakpoints' as mQ;
+
+// Tablet (481px - 768px)
+
+@media screen and (min-width: mQ.$tabletMin) and (max-width: mQ.$tabletMax) {
+	// Layout Styles
+	body {
+		flex-direction: column-reverse;
+	}
+	.sidebar {
+		height: 45vh;
+		width: 100%;
+	}
+	.map {
+		height: 55vh;
+		width: 100%;
+	}
+	.battle {
+		height: 45vh;
+	}
+	//  Font Styles
+	.battle-title {
+		font-size: 2rem;
+	}
+	.details-title {
+		font-size: 1.4rem;
+	}
+	.battle-date,
+	.faction-casualties {
+		font-size: 1.25rem;
+	}
+}
+
+// Laptop (769px - 1024px)
+
+@media screen and (min-width: mQ.$laptopMin) and (max-width: mQ.$laptopMax) {
+	// Layout Styles
+	body {
+		flex-direction: column-reverse;
+	}
+	.sidebar {
+		height: 45vh;
+		width: 100%;
+	}
+	.map {
+		height: 55vh;
+		width: 100%;
+	}
+	.battle {
+		height: 40vh;
+	}
+	//  Font Styles
+	.battle-title {
+		font-size: 2rem;
+	}
+	.details-title {
+		font-size: 1.4rem;
+	}
+	.battle-date,
+	.faction-casualties {
+		font-size: 1.25rem;
+	}
+}
+
+// Laptop - Width (769px - 1024px) and Height (Less than 700px)
+
+@media screen and (min-width: mQ.$laptopMin) and (max-width: mQ.$laptopMax) and (max-height: 700px) {
+	// Layout Styles
+	body {
+		flex-direction: column-reverse;
+	}
+	.sidebar {
+		height: 45vh;
+		width: 100%;
+	}
+	.map {
+		height: 55vh;
+		width: 100%;
+	}
+	.battle {
+		height: 40vh;
+	}
+	//  Font Styles
+	.battle-title {
+		font-size: 1.5rem;
+	}
+	.details-title {
+		font-size: 1.25rem;
+	}
+	.battle-date,
+	.faction-casualties {
+		font-size: 1.2rem;
+	}
+}
