@@ -1,5 +1,3 @@
-// Query Selectors
-
 // Page Sections
 export const sidebar = document.getElementById('sidebar');
 export const map = document.getElementById('map');

@@ -1,7 +1,6 @@
 'use strict';
 
 // Imports
-
 import '../sass/main.scss';
 import '../css/images.css';
 import * as qS from './querySelectors.js';
@@ -54,23 +53,6 @@ class App {
 					.bindPopup(battle.name, { closeButton: false, closeOnClick: false });
 			}
 		});
-
-		/* *DEV TOOLS*
-
-		// Marker Array
-		// for (const object in this.map._layers) {
-		// 	const marker = this.map._layers[object];
-		// 	this.markerArray.push(marker);
-		// }
-		// this.markerArray.shift();
-		// console.log(this.markerArray);
-
-		// Logs Map Click 
-		// this.map.on('click', function (e) {
-		// 	console.log(e.latlng.lat);
-		// 	console.log(e.latlng.lng);
-		// });
-		*/
 	}
 
 	// Render Battles Method
@@ -209,8 +191,6 @@ class App {
 			// Map Resets
 			this.map.closePopup();
 			this.map.flyTo([47, 13], 4);
-			// Remove scroll lock (REMOVED FOR iOS SAFARI 'BUG')
-			// qS.sidebar.classList.remove('locked');
 		}
 	}
 }
