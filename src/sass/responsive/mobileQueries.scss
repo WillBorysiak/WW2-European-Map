@@ -1,10 +1,8 @@
-// Imports
 @use '../abstracts/breakpoints' as mQ;
 
-// Small Mobile (Less than 320px)
+// small mobile (Less than 320px)
 
 @media screen and (max-width: mQ.$smallMobile) {
-	// Layout Styles
 	body {
 		flex-direction: column-reverse;
 	}
@@ -23,7 +21,6 @@
 		height: 40vh;
 	}
 
-	// Font Styles
 	.battle-title {
 		font-size: 1.25rem;
 	}
@@ -43,10 +40,9 @@
 	}
 }
 
-// Mobile (320px - 480px)
+// mobile (320px - 480px)
 
 @media screen and (min-width: mQ.$mobileMin) and (max-width: mQ.$mobileMax) {
-	// Layout Styles
 	body {
 		flex-direction: column-reverse;
 	}
@@ -65,7 +61,6 @@
 		height: 40vh;
 	}
 
-	// Font Styles
 	.battle-title {
 		font-size: 1.5rem;
 	}
@@ -85,10 +80,9 @@
 	}
 }
 
-// Mobile - Width(320px - 480px) and Height (Above 720px)
+// mobile - Width(320px - 480px) and height (Above 720px)
 
 @media screen and (min-width: mQ.$mobileMin) and (max-width: mQ.$mobileMax) and (min-height: 720px) {
-	// Layout Styles
 	body {
 		flex-direction: column-reverse;
 	}
@@ -107,7 +101,6 @@
 		height: 40vh;
 	}
 
-	// Font Styles
 	.battle-title {
 		font-size: 1.6rem;
 	}

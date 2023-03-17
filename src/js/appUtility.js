@@ -1,4 +1,3 @@
-// Toggle Data
 export const resetBattles = function () {
 	document.querySelectorAll('.details-container-show').forEach(item => {
 		item.classList.remove('details-container-show');
@@ -11,7 +10,6 @@ export const resetImages = function () {
 	});
 };
 
-// Render Flags
 export const renderFlags = function (array, faction, battle) {
 	let id = faction + '-' + battle;
 	let flagContainer = document.getElementById(id);
@@ -22,7 +20,8 @@ export const renderFlags = function (array, faction, battle) {
 	});
 };
 
-// Red Marker Variable
+// map markers
+
 export let redIcon = new L.Icon({
 	iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
 	shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -32,7 +31,6 @@ export let redIcon = new L.Icon({
 	shadowSize: [41, 41],
 });
 
-// BlueMarker Variable
 export let blueIcon = new L.Icon({
 	iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png',
 	shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',

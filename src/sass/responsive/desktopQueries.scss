@@ -1,10 +1,7 @@
-// Imports
 @use '../abstracts/breakpoints' as mQ;
 
-// Desktop (1025px - 1200px)
-
+// desktop (1025px - 1200px)
 @media screen and (min-width: mQ.$desktopMin) and (max-width: mQ.$desktopMax) {
-	// Layout Styles
 	body {
 		flex-direction: row;
 	}
@@ -19,7 +16,7 @@
 	.battle {
 		height: 40vh;
 	}
-	// Font Styles
+
 	.details-title {
 		font-size: 1.3rem;
 	}
@@ -29,10 +26,9 @@
 	}
 }
 
-// Desktop - Width (1025px +) and Height (More than 400px)
+// desktop - width (1025px +) and height (More than 400px)
 
 @media screen and (min-width: mQ.$laptopMax) and (max-height: 400px) {
-	// Layout Styles
 	body {
 		flex-direction: row;
 	}
@@ -47,7 +43,7 @@
 	.battle {
 		height: 75vh;
 	}
-	// Font Styles
+
 	.battle-title {
 		font-size: 2rem;
 	}
@@ -60,10 +56,9 @@
 	}
 }
 
-// Desktop - Width (1025px +) and Height (More than 550px)
+// desktop - width (1025px +) and height (More than 550px)
 
 @media screen and (min-width: mQ.$laptopMax) and (max-height: 550px) {
-	// Layout Styles
 	body {
 		flex-direction: row;
 	}
@@ -78,7 +73,7 @@
 	.battle {
 		height: 75vh;
 	}
-	// Font Styles
+
 	.battle-title {
 		font-size: 2rem;
 	}
@@ -91,10 +86,9 @@
 	}
 }
 
-// Desktop - Width (1025px +) and Height (More than 750px)
+// desktop - width (1025px +) and height (More than 750px)
 
 @media screen and (min-width: mQ.$laptopMax) and (max-height: 750px) {
-	// Layout Styles
 	body {
 		flex-direction: row;
 	}
@@ -109,7 +103,7 @@
 	.battle {
 		height: 50vh;
 	}
-	// Font Styles
+
 	.battle-title {
 		font-size: 2rem;
 	}
@@ -122,10 +116,9 @@
 	}
 }
 
-// Wide Desktop (1201px +)
+// wide desktop (1201px +)
 
 @media screen and (min-width: mQ.$wideDesktop) {
-	// Layout Styles
 	body {
 		flex-direction: row;
 	}
@@ -141,7 +134,7 @@
 	.battle {
 		height: 32vh;
 	}
-	// Font Styles
+
 	.battle-title {
 		font-size: 2rem;
 	}
@@ -154,10 +147,9 @@
 	}
 }
 
-// Desktop - Width (1201px +) and Height (Less than 550px)
+// desktop - width (1201px +) and height (Less than 550px)
 
 @media screen and (min-width: mQ.$wideDesktop) and (max-height: 550px) {
-	// Layout Styles
 	body {
 		flex-direction: row;
 	}
@@ -172,7 +164,7 @@
 	.battle {
 		height: 75vh;
 	}
-	// Font Styles
+
 	.battle-title {
 		font-size: 2rem;
 	}
@@ -185,10 +177,9 @@
 	}
 }
 
-// Wide Desktop - Width (1201px +) and Height (Less than 875px)
+// wide desktop - width (1201px +) and height (Less than 875px)
 
 @media screen and (min-width: mQ.$wideDesktop) and (max-height: 875px) {
-	// Layout Styles
 	body {
 		flex-direction: row;
 	}
@@ -203,7 +194,7 @@
 	.battle {
 		height: 55vh;
 	}
-	// Font Styles
+
 	.battle-title {
 		font-size: 2rem;
 	}

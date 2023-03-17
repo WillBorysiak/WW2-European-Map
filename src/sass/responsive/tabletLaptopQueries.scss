@@ -1,10 +1,8 @@
-// Imports
 @use '../abstracts/breakpoints' as mQ;
 
-// Tablet (481px - 768px)
+// tablet (481px - 768px)
 
 @media screen and (min-width: mQ.$tabletMin) and (max-width: mQ.$tabletMax) {
-	// Layout Styles
 	body {
 		flex-direction: column-reverse;
 	}
@@ -19,7 +17,7 @@
 	.battle {
 		height: 45vh;
 	}
-	//  Font Styles
+
 	.battle-title {
 		font-size: 2rem;
 	}
@@ -32,10 +30,9 @@
 	}
 }
 
-// Laptop (769px - 1024px)
+// laptop (769px - 1024px)
 
 @media screen and (min-width: mQ.$laptopMin) and (max-width: mQ.$laptopMax) {
-	// Layout Styles
 	body {
 		flex-direction: column-reverse;
 	}
@@ -50,7 +47,7 @@
 	.battle {
 		height: 40vh;
 	}
-	//  Font Styles
+
 	.battle-title {
 		font-size: 2rem;
 	}
@@ -63,10 +60,9 @@
 	}
 }
 
-// Laptop - Width (769px - 1024px) and Height (Less than 700px)
+// laptop - width (769px - 1024px) and height (Less than 700px)
 
 @media screen and (min-width: mQ.$laptopMin) and (max-width: mQ.$laptopMax) and (max-height: 700px) {
-	// Layout Styles
 	body {
 		flex-direction: column-reverse;
 	}
@@ -81,7 +77,7 @@
 	.battle {
 		height: 40vh;
 	}
-	//  Font Styles
+
 	.battle-title {
 		font-size: 1.5rem;
 	}
