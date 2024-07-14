@@ -2,41 +2,40 @@
 
 <h2 align="center">Purpose of the App:</h2>
 
-<h3 align="center">To provide an application to display infomation of battles in the European theatre of WW2.<h3>
+<h3 align="center"><i>To provide an user interface to display infomation of battles in the European theatre of WW2.</i><h3>
 
 <h2 align="center">Technology used</h2>
   
 <div align="center">
-  <img align="center" src="/assets/readme-icons/html5-logo.svg" alt="HTML" height="50"/>
-  <p align="center">HTML5</p> 
+  <img align="center" src="/docs/readme/icons/html5.svg" alt="HTML" height="50"/>
+  <p align="center"><i>HTML5</i></p> 
 </div>
    
 <div align="center">
-  <img align="center" src="/assets/readme-icons/css3-logo.svg" alt="HTML" height="50"/>
-  <p align="center">CSS3</p> 
+  <img align="center" src="/docs/readme/icons/css3.svg" alt="CSS3" height="50"/>
+  <p align="center"><i>CSS3</i></p> 
+</div>
+<i>/
+<div align="center">
+  <img align="center" src="/docs/readme/icons/javascript.svg" alt="JavaScript" height="50"/>
+  <p align="center"><i>JavaScript</i></p> 
 </div>
 
 <div align="center">
-  <img align="center" src="/assets/readme-icons/js-logo.svg" alt="HTML" height="50"/>
-  <p align="center">JavaScript (ES6+)</p> 
+  <img align="center" src="/docs/readme/icons/sass.svg" alt="SASS" height="50"/>
+  <p align="center"><i>SASS</i></p> 
 </div>
 
 <div align="center">
-  <img align="center" src="/assets/readme-icons/sass-logo.svg" alt="HTML" height="50"/>
-  <p align="center">SASS</p> 
-</div>
-
-<div align="center">
-  <img align="center" src="/assets/readme-icons/webpack-logo.svg" alt="HTML" height="50"/>
-  <p align="center">Webpack</p> 
+  <img align="center" src="/docs/readme/icons/webpack.svg" alt="Webpack" height="50"/>
+  <p align="center"><i>Webpack</i></p> 
 </div>
 
 <h2 align="center">How The Application Works</h2>
 
-- The application uses HTML, SCSS and Javascript with the leaflet library to show a side panel and map that contain infomation about WW2 battles/events.
+- The application uses HTML, SCSS and Javascript with the leaflet library to show a side panel and map that contain information about WW2 battles/events.
 - Javascript renders the side panels using SCSS to style and provide image backgrounds.
-- The leaflet library renders a map that has markers which correlate to one of the side panel battles.
-- By clicking either a panel or marker, you are shown the key facts of that battle and the location on the map.
+- The leaflet library renders a map that has markers which correlate to one of the WW2 battles.
 
 <h2 align="center">What I learnt</h2>
 
